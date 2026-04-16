@@ -1,0 +1,9 @@
+name = "hl-newsletter"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+account_id = "b4d6f31a0e9a8ea040230231fabb0d9b"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hl-newsletter-db"
+database_id = "eab8c438-5eda-47a7-a40a-40be28302f5c"
