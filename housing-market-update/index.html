@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Weekly housing market update for Elizabethtown & Hardin County, Kentucky. Data and trends from The Brantingham Group (KW), published on Hardin Local Weekly." />
+  <meta name="theme-color" content="#0e1219" />
+
+  <meta property="og:title" content="Hardin County Housing Market Update — Hardin Local Weekly" />
+  <meta property="og:description" content="Weekly housing market dashboard for Elizabethtown & Hardin County, Kentucky. Days on market, inventory, pricing, and year-to-date trends." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hardin Local" />
+
+  <title>Hardin County Housing Market Update | Hardin Local Weekly</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="housing-dashboard">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-name">Hardin Local Weekly</span>
+        <span class="brand-tag">Housing Market Update</span>
+      </div>
+      <nav class="header-nav">
+        <a href="../" class="nav-link">← Events</a>
+        <a href="https://hardinlocal.com" class="nav-link">HardinLocal.com</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="pcs-banner" class="pcs-banner" hidden>
+    <div class="pcs-banner-inner">
+      <span>🪖</span>
+      <span><strong>PCS Season is active.</strong> Fort Knox families rotate in and out during this window — expect faster turnover in Radcliff, Vine Grove, Rineyville, and military-adjacent Elizabethtown. The numbers below reflect that seasonal surge.</span>
+    </div>
+    <button class="pcs-banner-close" aria-label="Dismiss banner" onclick="document.getElementById('pcs-banner').hidden=true">×</button>
+  </div>
+
+  <section class="dash-hero">
+    <div class="dash-hero-inner">
+      <div>
+        <p class="dash-eyebrow" id="dash-eyebrow">— Episode —</p>
+        <h1 class="dash-title">Housing Market Update <span class="beta-tag">BETA</span></h1>
+        <p class="dash-subtitle">Elizabethtown &amp; Hardin County, Kentucky</p>
+      </div>
+      <div>
+        <div id="dash-week-badge" class="dash-week-badge">Loading…</div>
+        <div class="dash-attribution" style="margin-top:.65rem">
+          <strong>Rachel Brantingham</strong>
+          <span>The Brantingham Group (KW)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="dash-main">
+
+    <section class="dash-section">
+      <h2 class="dash-section-title">This Week's Numbers</h2>
+      <div class="dash-grid" id="this-week-grid">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <h2 class="dash-section-title">Pricing Snapshot</h2>
+      <div class="dash-pricing" id="pricing-grid">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <div id="posture-callout" class="posture-callout">
+        <div class="posture-body">
+          <div class="posture-label" id="posture-label">—</div>
+          <div class="posture-desc" id="posture-desc">—</div>
+        </div>
+        <div class="posture-rate" id="posture-rate">
+          <span>Interest Rates</span>
+          <strong id="posture-rate-value">—</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <h2 class="dash-section-title">Market Dynamics</h2>
+      <div class="micro-cards" id="micro-cards">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <h2 class="dash-section-title">Year-to-Date Trends</h2>
+      <div class="chart-row">
+        <div class="chart-card">
+          <div class="chart-title">
+            <span>Avg Days on Market (30-day)</span>
+            <span id="dom-trend-hint" class="chart-trend-hint neutral">—</span>
+          </div>
+          <svg id="chart-dom" class="chart-svg" viewBox="0 0 520 200" preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">
+            <span>Months of Inventory</span>
+            <span id="months-trend-hint" class="chart-trend-hint neutral">—</span>
+          </div>
+          <svg id="chart-months" class="chart-svg" viewBox="0 0 520 200" preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <div class="chart-card">
+        <div class="chart-title">
+          <span>Avg List vs. Avg Sold Price</span>
+          <span id="price-gap-hint" class="chart-trend-hint neutral">—</span>
+        </div>
+        <svg id="chart-prices" class="chart-svg" viewBox="0 0 1040 260" preserveAspectRatio="xMidYMid meet"></svg>
+        <div class="chart-legend">
+          <span><span class="lg-dot" style="background:var(--hl-blue)"></span>Avg List Price</span>
+          <span><span class="lg-dot" style="background:var(--hl-green)"></span>Avg Sold Price</span>
+          <span><span class="lg-dot" style="background:#f2b84c"></span>List–Sold Gap</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <div class="chart-row">
+        <div class="chart-card">
+          <div class="chart-title"><span>Weekly Activity</span></div>
+          <svg id="chart-activity" class="chart-svg" viewBox="0 0 520 220" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="chart-legend">
+            <span><span class="lg-dot" style="background:var(--hl-blue)"></span>New Listings</span>
+            <span><span class="lg-dot" style="background:#f2b84c"></span>Under Contract</span>
+            <span><span class="lg-dot" style="background:var(--hl-green)"></span>Closed</span>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title"><span>Active Inventory</span></div>
+          <svg id="chart-active" class="chart-svg" viewBox="0 0 520 220" preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <h2 class="dash-section-title">Market Posture Over Time</h2>
+      <div id="posture-strip" class="posture-strip">
+        <!-- Populated by JS -->
+      </div>
+      <div class="chart-legend" style="justify-content:center;margin-top:.55rem">
+        <span><span class="lg-dot" style="background:#1e3a5f"></span>Buyer-favorable</span>
+        <span><span class="lg-dot" style="background:var(--hl-blue)"></span>Buyer-leaning</span>
+        <span><span class="lg-dot" style="background:#f2b84c"></span>Balanced</span>
+        <span><span class="lg-dot" style="background:#8ac24a"></span>Balanced / Slight seller</span>
+        <span><span class="lg-dot" style="background:var(--hl-green)"></span>Seller-leaning</span>
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <div class="rate-card">
+        <div class="rate-card-body">
+          <div class="stat-label">Interest Rate Trend (from weekly reports)</div>
+          <div class="stat-value" id="rate-current">—</div>
+          <div class="stat-meta" id="rate-sub">Rachel's reports across the year</div>
+        </div>
+        <svg id="rate-spark" class="rate-spark" viewBox="0 0 200 52" preserveAspectRatio="none"></svg>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="episode-links">
+    <div class="episode-links-title" id="episode-links-title">— Full Episode Links —</div>
+    <div id="episode-links-body">
+      <span class="pending">Episode video links added after publication</span>
+    </div>
+  </section>
+
+  <section class="dash-attrib">
+    <div class="dash-attrib-inner">
+      <div class="dash-attrib-title">Want a Hardin County–specific breakdown?</div>
+      <p class="dash-attrib-desc">
+        These weekly numbers tell the countywide story — but every neighborhood, price range, and situation is different. For a read on your block, your budget, or your next move, talk to <strong>Rachel Brantingham</strong> at The Brantingham Group.
+      </p>
+      <a href="mailto:thebrantinghamgroup@kw.com" class="btn btn-primary">Contact The Brantingham Group</a>
+    </div>
+  </section>
+
+  <section class="dash-methodology">
+    <h3>About this data</h3>
+    <p>The Hardin Local Weekly Housing Market Update is produced each week by <strong>Rachel Brantingham</strong> of The Brantingham Group (KW). Figures reflect activity in Elizabethtown and Hardin County, Kentucky.</p>
+
+    <h3>Methodology notes</h3>
+    <ul>
+      <li><strong>Days on market</strong> is a 30-day rolling average — how long homes are taking to go under contract.</li>
+      <li><strong>Months of inventory</strong> = active homes ÷ homes sold in the last 30 days. Under 5 = seller-leaning, over 6 = buyer-leaning, in between = balanced.</li>
+      <li><strong>Weekly counts</strong> (new, under contract, closed) reflect the rolling seven days before each Tuesday livestream.</li>
+      <li><strong>Gaps</strong> in the trend lines (E04, E08, E09, E15) are weeks where no housing segment aired.</li>
+    </ul>
+
+    <h3>Data disclaimer</h3>
+    <p>These figures are compiled for public information. Countywide data — individual neighborhoods and price ranges may behave differently. For personal real-estate decisions, consult a licensed agent.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Hardin Local Weekly</strong> — Your weekly community podcast for Hardin County, Kentucky</p>
+      <p>Housing data compiled by The Brantingham Group (KW) · <a href="https://hardinlocal.com">HardinLocal.com</a></p>
+      <p class="footer-beta"><strong>This dashboard is in beta.</strong> We're working hard to make sure this data is accurate and helpful. While in beta, we're continuously improving the Housing Market Update — and we'd love your feedback, corrections, or thoughts. Email <a href="mailto:contactus@tektel.net">contactus@tektel.net</a>.</p>
+      <p class="footer-small">Follow us for weekly updates on real estate, local events, business news, and community conversations.</p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    'use strict';
+
+    // ---------- PCS season banner (auto-windowed) ----------
+    function showPcsBannerIfInSeason() {
+      var now = new Date();
+      var m = now.getMonth() + 1;  // 1-12
+      var d = now.getDate();
+      var inSummer = (m === 5) || (m === 6) || (m === 7) || (m === 8) || (m === 9 && d <= 15);
+      var inWinter = (m === 12) || (m === 1) || (m === 2);
+      if (inSummer || inWinter) {
+        var b = document.getElementById('pcs-banner');
+        if (b) b.hidden = false;
+      }
+    }
+
+    // ---------- Formatters ----------
+    var fmtMoney = function (n) {
+      if (n == null) return '—';
+      return '$' + Math.round(n).toLocaleString('en-US');
+    };
+    var fmtMoneyK = function (n) {
+      if (n == null) return '—';
+      return '$' + Math.round(n / 1000) + 'K';
+    };
+    var fmtInt = function (n) { return n == null ? '—' : String(n); };
+    var fmtDec = function (n) { return n == null ? '—' : Number(n).toFixed(1); };
+    var monthDay = function (iso) {
+      if (!iso) return '';
+      var parts = iso.split('-');
+      return parseInt(parts[1], 10) + '/' + parseInt(parts[2], 10);
+    };
+
+    // ---------- Fetch + render ----------
+    fetch('../data/housing.json', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(renderAll)
+      .catch(function (err) {
+        console.error('Failed to load housing.json', err);
+        document.querySelector('.dash-main').innerHTML =
+          '<p style="color:#fca5a5;padding:2rem 0">Could not load housing data. Check console.</p>';
+      });
+
+    function renderAll(payload) {
+      var weeks = payload.weeks || [];
+      var withData = weeks.filter(function (w) { return w.data; });
+      if (withData.length === 0) return;
+
+      var current = withData[withData.length - 1];
+      var previous = withData[withData.length - 2] || null;
+
+      renderHero(current);
+      renderThisWeek(current, previous);
+      renderPricing(current);
+      renderPosture(current);
+      renderMicroCards(current, previous, withData);
+      renderDomChart(weeks);
+      renderMonthsChart(weeks);
+      renderPricesChart(weeks);
+      renderActivityChart(weeks);
+      renderActiveChart(weeks);
+      renderPostureStrip(weeks);
+      renderRateSpark(weeks);
+
+      showPcsBannerIfInSeason();
+    }
+
+    // ---------- Hero ----------
+    function renderHero(current) {
+      document.getElementById('dash-eyebrow').textContent =
+        current.episode + ' · Aired ' + formatDate(current.airDate);
+      document.getElementById('dash-week-badge').textContent = current.weekLabel;
+    }
+
+    function formatDate(iso) {
+      if (!iso) return '';
+      var parts = iso.split('-');
+      var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      return months[parseInt(parts[1], 10) - 1] + ' ' + parseInt(parts[2], 10) + ', ' + parts[0];
+    }
+
+    // ---------- This week's numbers ----------
+    function renderThisWeek(cur, prev) {
+      var d = cur.data;
+      var pd = prev && prev.data;
+
+      var cards = [
+        { label: 'New Listings', value: fmtInt(d.newListings), meta: 'This week', accent: 'blue' },
+        { label: 'Under Contract', value: fmtInt(d.underContract), meta: 'This week', accent: 'orange' },
+        { label: 'Homes Closed', value: fmtInt(d.closed), meta: 'This week', accent: 'green' },
+        {
+          label: 'Avg Days on Market',
+          value: fmtInt(d.avgDaysOnMarket),
+          meta: '30-day avg',
+          valueClass: 'value-green',
+          accent: 'green',
+          delta: pd && pd.avgDaysOnMarket != null && d.avgDaysOnMarket != null
+            ? deltaBadge(d.avgDaysOnMarket - pd.avgDaysOnMarket, 'days', true)
+            : null
+        },
+        {
+          label: 'Active Homes',
+          value: fmtInt(d.activeHomes),
+          meta: 'On the market',
+          accent: 'blue'
+        },
+        {
+          label: 'Months Inventory',
+          value: fmtDec(d.monthsInventory),
+          meta: (d.soldLast30Days ? d.soldLast30Days : '—') + ' sold / 30 days',
+          valueClass: 'value-orange',
+          accent: 'orange'
+        }
+      ];
+
+      var html = cards.map(function (c) {
+        return '<div class="stat-card accent-' + c.accent + '">' +
+          '<div class="stat-label">' + c.label + '</div>' +
+          '<div class="stat-value ' + (c.valueClass || '') + '">' + c.value + '</div>' +
+          '<div class="stat-meta">' + c.meta + '</div>' +
+          (c.delta || '') +
+          '</div>';
+      }).join('');
+
+      document.getElementById('this-week-grid').innerHTML = html;
+    }
+
+    function deltaBadge(delta, unit, lowerIsBetter) {
+      if (delta === 0) return '<div class="stat-delta flat">no change</div>';
+      var cls = (delta < 0) === !!lowerIsBetter ? 'down' : 'up';
+      var arrow = delta < 0 ? '▼' : '▲';
+      return '<div class="stat-delta ' + cls + '">' + arrow + ' ' + Math.abs(delta) + ' ' + unit + '</div>';
+    }
+
+    // ---------- Pricing ----------
+    function renderPricing(cur) {
+      var d = cur.data;
+      var html = '';
+      html += '<div class="price-card accent-blue" style="border-top:3px solid var(--hl-blue)">' +
+        '<div class="stat-label">Avg List Price</div>' +
+        '<div class="stat-value value-blue">' + fmtMoney(d.avgListPrice) + '</div>' +
+        '<div class="stat-meta">' + (d.medianListPrice ? 'Median: ' + fmtMoney(d.medianListPrice) : 'Median: not reported this week') + '</div>' +
+        '</div>';
+      html += '<div class="price-card accent-green" style="border-top:3px solid var(--hl-green)">' +
+        '<div class="stat-label">Avg Sold Price</div>' +
+        '<div class="stat-value value-green">' + fmtMoney(d.avgSoldPrice) + '</div>' +
+        '<div class="stat-meta">' + (d.medianSoldPrice ? 'Median: ' + fmtMoney(d.medianSoldPrice) : 'Median: not reported this week') + '</div>' +
+        '</div>';
+      if (d.avgListPrice && d.avgSoldPrice) {
+        var gap = d.avgListPrice - d.avgSoldPrice;
+        html += '<div class="price-card accent-orange" style="border-top:3px solid #f2b84c">' +
+          '<div class="stat-label">List – Sold Gap</div>' +
+          '<div class="stat-value value-orange">' + fmtMoney(gap) + '</div>' +
+          '<div class="stat-meta">' + (d.gapDirection ? 'Trend: ' + d.gapDirection.replace(/-/g, ' ') : '—') + '</div>' +
+          '</div>';
+      }
+      document.getElementById('pricing-grid').innerHTML = html;
+    }
+
+    // ---------- Posture ----------
+    function renderPosture(cur) {
+      var d = cur.data;
+      var callout = document.getElementById('posture-callout');
+      callout.className = 'posture-callout posture-' + d.posture;
+      document.getElementById('posture-label').textContent = d.posture.replace(/-/g, ' ').toUpperCase() + ' MARKET';
+      document.getElementById('posture-desc').textContent = d.postureDesc || '';
+      var rateText = d.interestRates && d.interestRates.label
+        ? d.interestRates.label
+        : '—';
+      document.getElementById('posture-rate-value').textContent = rateText;
+    }
+
+    // ---------- Micro cards ----------
+    function renderMicroCards(cur, prev, all) {
+      var d = cur.data;
+      var pd = prev && prev.data;
+      var cards = [];
+
+      if (pd && pd.avgDaysOnMarket != null && d.avgDaysOnMarket != null) {
+        var diff = d.avgDaysOnMarket - pd.avgDaysOnMarket;
+        cards.push({
+          label: 'Days on Market',
+          value: (diff === 0 ? '—' : (diff < 0 ? '▼' : '▲') + ' ' + Math.abs(diff) + ' days'),
+          cls: diff < 0 ? 'down' : (diff > 0 ? 'up' : ''),
+          sub: pd.avgDaysOnMarket + ' → ' + d.avgDaysOnMarket
+        });
+      }
+
+      if (d.gapDirection) {
+        cards.push({
+          label: 'List–Sold Gap',
+          value: d.gapDirection.replace(/-/g, ' '),
+          cls: d.gapDirection.indexOf('tight') === 0 ? 'tightening' : '',
+          sub: d.gapDirection === 'tightening' || d.gapDirection === 'tightened-significantly'
+            ? 'Sellers pricing smarter' : ''
+        });
+      }
+
+      if (d.marketPace) {
+        cards.push({
+          label: 'Market Pace',
+          value: d.marketPace,
+          cls: d.marketPace === 'gaining' ? 'gaining' : '',
+          sub: d.marketPace === 'gaining' ? 'Spring momentum' : ''
+        });
+      }
+
+      if (pd && pd.monthsInventory != null && d.monthsInventory != null) {
+        var mdiff = (d.monthsInventory - pd.monthsInventory).toFixed(1);
+        cards.push({
+          label: 'Months Inventory Δ',
+          value: (mdiff > 0 ? '▲ +' : (mdiff < 0 ? '▼ ' : '')) + mdiff,
+          cls: mdiff < 0 ? 'tightening' : '',
+          sub: pd.monthsInventory + ' → ' + d.monthsInventory
+        });
+      }
+
+      var html = cards.map(function (c) {
+        return '<div class="micro-card">' +
+          '<div class="micro-label">' + c.label + '</div>' +
+          '<div class="micro-value ' + (c.cls || '') + '">' + c.value + '</div>' +
+          (c.sub ? '<div class="micro-sub">' + c.sub + '</div>' : '') +
+          '</div>';
+      }).join('');
+      document.getElementById('micro-cards').innerHTML = html;
+    }
+
+    // ---------- Chart helpers ----------
+    function scale(v, vMin, vMax, pxMin, pxMax) {
+      if (vMax === vMin) return (pxMin + pxMax) / 2;
+      return pxMin + (v - vMin) / (vMax - vMin) * (pxMax - pxMin);
+    }
+
+    // Build segments handling nulls (gaps render as dashed bridges)
+    function pathSegments(points) {
+      // points = [{x,y,isGap}]
+      var solidSegments = [];
+      var cur = [];
+      points.forEach(function (p) {
+        if (p.y == null) {
+          if (cur.length) solidSegments.push(cur);
+          cur = [];
+        } else {
+          cur.push(p);
+        }
+      });
+      if (cur.length) solidSegments.push(cur);
+      return solidSegments;
+    }
+
+    function pointsToPath(pts) {
+      return pts.map(function (p, i) { return (i === 0 ? 'M' : 'L') + p.x + ',' + p.y; }).join(' ');
+    }
+
+    // ---------- DOM trend chart ----------
+    function renderDomChart(weeks) {
+      var svg = document.getElementById('chart-dom');
+      var W = 520, H = 200, PAD_L = 36, PAD_R = 16, PAD_T = 18, PAD_B = 34;
+
+      var values = weeks.map(function (w) { return w.data ? w.data.avgDaysOnMarket : null; });
+      var valid = values.filter(function (v) { return v != null; });
+      if (!valid.length) return;
+      var vMin = Math.min.apply(null, valid) - 3;
+      var vMax = Math.max.apply(null, valid) + 3;
+
+      var points = weeks.map(function (w, i) {
+        var x = scale(i, 0, weeks.length - 1, PAD_L, W - PAD_R);
+        var v = w.data ? w.data.avgDaysOnMarket : null;
+        var y = v != null ? scale(v, vMin, vMax, H - PAD_B, PAD_T) : null;
+        return { x: x, y: y, v: v, ep: monthDay(w.airDate) };
+      });
+
+      var out = '';
+      out += gridAndAxes(PAD_L, PAD_R, PAD_T, PAD_B, W, H, vMin, vMax, 4);
+
+      var segs = pathSegments(points);
+      if (segs.length > 0) {
+        var first = segs[0], last = segs[segs.length - 1];
+        var areaPath = 'M' + first[0].x + ',' + (H - PAD_B) + ' ' +
+          segs.map(pointsToPath).join(' ') + ' ' +
+          'L' + last[last.length - 1].x + ',' + (H - PAD_B) + ' Z';
+        out += '<path class="area-dom" d="' + areaPath + '"/>';
+      }
+
+      // Dashed bridges across gaps
+      for (var i = 0; i < segs.length - 1; i++) {
+        var a = segs[i][segs[i].length - 1];
+        var b = segs[i + 1][0];
+        out += '<line class="line-dom-gap" x1="' + a.x + '" y1="' + a.y + '" x2="' + b.x + '" y2="' + b.y + '"/>';
+      }
+      segs.forEach(function (s) {
+        out += '<path class="line-dom" d="' + pointsToPath(s) + '"/>';
+      });
+      points.forEach(function (p) {
+        if (p.y != null) {
+          out += '<circle class="dot-dom" cx="' + p.x + '" cy="' + p.y + '" r="3.5"/>';
+        }
+      });
+      // X labels (sparse: show every other or episode ticks)
+      points.forEach(function (p, i) {
+        if (i === 0 || i === points.length - 1 || i % 3 === 0) {
+          out += '<text class="axis-label-x" x="' + p.x + '" y="' + (H - 10) + '" text-anchor="middle">' + p.ep + '</text>';
+        }
+      });
+      // latest value label
+      var lastWith = points.slice().reverse().find(function (p) { return p.y != null; });
+      if (lastWith) {
+        out += '<text class="value-label" x="' + lastWith.x + '" y="' + (lastWith.y - 8) + '" text-anchor="middle">' + lastWith.v + '</text>';
+      }
+
+      svg.innerHTML = out;
+
+      // Trend hint
+      if (valid.length >= 2) {
+        var trend = valid[valid.length - 1] - valid[0];
+        var hint = document.getElementById('dom-trend-hint');
+        if (trend < 0) { hint.className = 'chart-trend-hint down'; hint.textContent = '▼ trending down ' + Math.abs(trend) + ' days YTD'; }
+        else if (trend > 0) { hint.className = 'chart-trend-hint up'; hint.textContent = '▲ up ' + trend + ' days YTD'; }
+        else { hint.className = 'chart-trend-hint neutral'; hint.textContent = 'flat YTD'; }
+      }
+    }
+
+    function gridAndAxes(PAD_L, PAD_R, PAD_T, PAD_B, W, H, vMin, vMax, ticks) {
+      var out = '';
+      var step = (vMax - vMin) / ticks;
+      for (var i = 0; i <= ticks; i++) {
+        var v = vMin + step * i;
+        var y = scale(v, vMin, vMax, H - PAD_B, PAD_T);
+        out += '<line class="grid-line" x1="' + PAD_L + '" y1="' + y + '" x2="' + (W - PAD_R) + '" y2="' + y + '"/>';
+        out += '<text class="axis-label" x="' + (PAD_L - 6) + '" y="' + (y + 3) + '" text-anchor="end">' + Math.round(v) + '</text>';
+      }
+      return out;
+    }
+
+    // ---------- Months of inventory chart ----------
+    function renderMonthsChart(weeks) {
+      var svg = document.getElementById('chart-months');
+      var W = 520, H = 200, PAD_L = 36, PAD_R = 16, PAD_T = 18, PAD_B = 34;
+
+      var values = weeks.map(function (w) { return w.data ? w.data.monthsInventory : null; });
+      var valid = values.filter(function (v) { return v != null; });
+      if (!valid.length) return;
+      var vMin = Math.max(0, Math.min.apply(null, valid) - 1);
+      var vMax = Math.max.apply(null, valid) + 1;
+
+      var points = weeks.map(function (w, i) {
+        var x = scale(i, 0, weeks.length - 1, PAD_L, W - PAD_R);
+        var v = w.data ? w.data.monthsInventory : null;
+        var y = v != null ? scale(v, vMin, vMax, H - PAD_B, PAD_T) : null;
+        return { x: x, y: y, v: v, ep: monthDay(w.airDate) };
+      });
+
+      var out = '';
+      out += gridAndAxesDec(PAD_L, PAD_R, PAD_T, PAD_B, W, H, vMin, vMax, 4);
+
+      var segs = pathSegments(points);
+      if (segs.length > 0) {
+        var first = segs[0], last = segs[segs.length - 1];
+        var areaPath = 'M' + first[0].x + ',' + (H - PAD_B) + ' ' +
+          segs.map(pointsToPath).join(' ') + ' ' +
+          'L' + last[last.length - 1].x + ',' + (H - PAD_B) + ' Z';
+        out += '<path class="area-months" d="' + areaPath + '"/>';
+      }
+      for (var i = 0; i < segs.length - 1; i++) {
+        var a = segs[i][segs[i].length - 1];
+        var b = segs[i + 1][0];
+        out += '<line class="line-months-gap" x1="' + a.x + '" y1="' + a.y + '" x2="' + b.x + '" y2="' + b.y + '"/>';
+      }
+      segs.forEach(function (s) { out += '<path class="line-months" d="' + pointsToPath(s) + '"/>'; });
+      points.forEach(function (p) { if (p.y != null) out += '<circle class="dot-months" cx="' + p.x + '" cy="' + p.y + '" r="3.5"/>'; });
+      points.forEach(function (p, i) {
+        if (i === 0 || i === points.length - 1 || i % 3 === 0) {
+          out += '<text class="axis-label-x" x="' + p.x + '" y="' + (H - 10) + '" text-anchor="middle">' + p.ep + '</text>';
+        }
+      });
+      var lastWith = points.slice().reverse().find(function (p) { return p.y != null; });
+      if (lastWith) {
+        out += '<text class="value-label" x="' + lastWith.x + '" y="' + (lastWith.y - 8) + '" text-anchor="middle">' + lastWith.v + '</text>';
+      }
+
+      // Threshold markers: 5 months (balanced line), 6 months (buyer)
+      if (vMax >= 5 && vMin <= 5) {
+        var y5 = scale(5, vMin, vMax, H - PAD_B, PAD_T);
+        out += '<line x1="' + PAD_L + '" y1="' + y5 + '" x2="' + (W - PAD_R) + '" y2="' + y5 + '" stroke="#f2b84c" stroke-dasharray="2 4" opacity=".45"/>';
+        out += '<text class="axis-label" x="' + (W - PAD_R) + '" y="' + (y5 - 4) + '" text-anchor="end" fill="#e08910">balanced (5)</text>';
+      }
+
+      svg.innerHTML = out;
+
+      if (valid.length >= 2) {
+        var trend = valid[valid.length - 1] - valid[0];
+        var hint = document.getElementById('months-trend-hint');
+        if (trend < 0) { hint.className = 'chart-trend-hint down'; hint.textContent = '▼ tightening ' + Math.abs(trend).toFixed(1) + ' mo YTD'; }
+        else if (trend > 0) { hint.className = 'chart-trend-hint up'; hint.textContent = '▲ up ' + trend.toFixed(1) + ' mo YTD'; }
+        else { hint.className = 'chart-trend-hint neutral'; hint.textContent = 'flat YTD'; }
+      }
+    }
+
+    function gridAndAxesDec(PAD_L, PAD_R, PAD_T, PAD_B, W, H, vMin, vMax, ticks) {
+      var out = '';
+      var step = (vMax - vMin) / ticks;
+      for (var i = 0; i <= ticks; i++) {
+        var v = vMin + step * i;
+        var y = scale(v, vMin, vMax, H - PAD_B, PAD_T);
+        out += '<line class="grid-line" x1="' + PAD_L + '" y1="' + y + '" x2="' + (W - PAD_R) + '" y2="' + y + '"/>';
+        out += '<text class="axis-label" x="' + (PAD_L - 6) + '" y="' + (y + 3) + '" text-anchor="end">' + v.toFixed(1) + '</text>';
+      }
+      return out;
+    }
+
+    // ---------- List vs sold prices chart ----------
+    function renderPricesChart(weeks) {
+      var svg = document.getElementById('chart-prices');
+      var W = 1040, H = 260, PAD_L = 56, PAD_R = 24, PAD_T = 20, PAD_B = 38;
+
+      var listVals = weeks.map(function (w) { return w.data ? w.data.avgListPrice : null; });
+      var soldVals = weeks.map(function (w) { return w.data ? w.data.avgSoldPrice : null; });
+      var all = listVals.concat(soldVals).filter(function (v) { return v != null; });
+      if (!all.length) return;
+      var vMin = Math.floor(Math.min.apply(null, all) / 10000) * 10000 - 5000;
+      var vMax = Math.ceil(Math.max.apply(null, all) / 10000) * 10000 + 5000;
+
+      var listPts = weeks.map(function (w, i) {
+        var x = scale(i, 0, weeks.length - 1, PAD_L, W - PAD_R);
+        var v = w.data ? w.data.avgListPrice : null;
+        return { x: x, y: v != null ? scale(v, vMin, vMax, H - PAD_B, PAD_T) : null, v: v, ep: monthDay(w.airDate) };
+      });
+      var soldPts = weeks.map(function (w, i) {
+        var x = scale(i, 0, weeks.length - 1, PAD_L, W - PAD_R);
+        var v = w.data ? w.data.avgSoldPrice : null;
+        return { x: x, y: v != null ? scale(v, vMin, vMax, H - PAD_B, PAD_T) : null, v: v };
+      });
+
+      var out = '';
+      // grid
+      var ticks = 5;
+      for (var i = 0; i <= ticks; i++) {
+        var v = vMin + (vMax - vMin) / ticks * i;
+        var y = scale(v, vMin, vMax, H - PAD_B, PAD_T);
+        out += '<line class="grid-line" x1="' + PAD_L + '" y1="' + y + '" x2="' + (W - PAD_R) + '" y2="' + y + '"/>';
+        out += '<text class="axis-label" x="' + (PAD_L - 6) + '" y="' + (y + 3) + '" text-anchor="end">' + fmtMoneyK(v) + '</text>';
+      }
+
+      // Gap fill between list and sold where both exist
+      var gapSegs = [];
+      var seg = [];
+      for (var i2 = 0; i2 < listPts.length; i2++) {
+        if (listPts[i2].y != null && soldPts[i2].y != null) {
+          seg.push(i2);
+        } else if (seg.length) {
+          gapSegs.push(seg);
+          seg = [];
+        }
+      }
+      if (seg.length) gapSegs.push(seg);
+      gapSegs.forEach(function (g) {
+        var topPath = g.map(function (i) { return listPts[i].x + ',' + listPts[i].y; });
+        var botPath = g.slice().reverse().map(function (i) { return soldPts[i].x + ',' + soldPts[i].y; });
+        out += '<path class="line-gap-fill" d="M' + topPath.join(' L') + ' L' + botPath.join(' L') + ' Z"/>';
+      });
+
+      // lines with gap handling
+      var listSegs = pathSegments(listPts);
+      var soldSegs = pathSegments(soldPts);
+      for (var i3 = 0; i3 < listSegs.length - 1; i3++) {
+        var a = listSegs[i3][listSegs[i3].length - 1], b = listSegs[i3 + 1][0];
+        out += '<line stroke="var(--hl-blue)" stroke-width="1.5" stroke-dasharray="4 3" opacity=".6" x1="' + a.x + '" y1="' + a.y + '" x2="' + b.x + '" y2="' + b.y + '"/>';
+      }
+      listSegs.forEach(function (s) { out += '<path class="line-list" d="' + pointsToPath(s) + '"/>'; });
+      for (var i4 = 0; i4 < soldSegs.length - 1; i4++) {
+        var a2 = soldSegs[i4][soldSegs[i4].length - 1], b2 = soldSegs[i4 + 1][0];
+        out += '<line stroke="var(--hl-green)" stroke-width="1.5" stroke-dasharray="4 3" opacity=".6" x1="' + a2.x + '" y1="' + a2.y + '" x2="' + b2.x + '" y2="' + b2.y + '"/>';
+      }
+      soldSegs.forEach(function (s) { out += '<path class="line-sold" d="' + pointsToPath(s) + '"/>'; });
+      listPts.forEach(function (p) { if (p.y != null) out += '<circle class="dot-list" cx="' + p.x + '" cy="' + p.y + '" r="3"/>'; });
+      soldPts.forEach(function (p) { if (p.y != null) out += '<circle class="dot-sold" cx="' + p.x + '" cy="' + p.y + '" r="3"/>'; });
+
+      // X labels
+      listPts.forEach(function (p, i) {
+        if (i === 0 || i === listPts.length - 1 || i % 2 === 0) {
+          out += '<text class="axis-label-x" x="' + p.x + '" y="' + (H - 14) + '" text-anchor="middle">' + p.ep + '</text>';
+        }
+      });
+
+      // Gap hint
+      var lastListValid = listVals.slice().reverse().find(function (v) { return v != null; });
+      var lastSoldValid = soldVals.slice().reverse().find(function (v) { return v != null; });
+      var firstListValid = listVals.find(function (v) { return v != null; });
+      var firstSoldValid = soldVals.find(function (v) { return v != null; });
+      if (lastListValid && lastSoldValid && firstListValid && firstSoldValid) {
+        var startGap = firstListValid - firstSoldValid;
+        var endGap = lastListValid - lastSoldValid;
+        var gapChange = endGap - startGap;
+        var hint = document.getElementById('price-gap-hint');
+        if (gapChange < -2000) { hint.className = 'chart-trend-hint down'; hint.textContent = '▼ gap tightened ' + fmtMoneyK(Math.abs(gapChange)) + ' YTD'; }
+        else if (gapChange > 2000) { hint.className = 'chart-trend-hint up'; hint.textContent = '▲ gap widened ' + fmtMoneyK(gapChange) + ' YTD'; }
+        else { hint.className = 'chart-trend-hint neutral'; hint.textContent = 'gap steady YTD'; }
+      }
+
+      svg.innerHTML = out;
+    }
+
+    // ---------- Activity chart (stacked-ish bars: three grouped bars per week) ----------
+    function renderActivityChart(weeks) {
+      var svg = document.getElementById('chart-activity');
+      var W = 520, H = 220, PAD_L = 36, PAD_R = 16, PAD_T = 20, PAD_B = 38;
+
+      var allVals = [];
+      weeks.forEach(function (w) {
+        if (w.data) {
+          [w.data.newListings, w.data.underContract, w.data.closed].forEach(function (v) {
+            if (v != null) allVals.push(v);
+          });
+        }
+      });
+      if (!allVals.length) return;
+      var vMax = Math.max.apply(null, allVals) + 5;
+
+      var groupWidth = (W - PAD_L - PAD_R) / weeks.length;
+      var barWidth = Math.min(5, groupWidth * 0.22);
+
+      var out = '';
+      // grid
+      for (var i = 0; i <= 4; i++) {
+        var v = vMax / 4 * i;
+        var y = scale(v, 0, vMax, H - PAD_B, PAD_T);
+        out += '<line class="grid-line" x1="' + PAD_L + '" y1="' + y + '" x2="' + (W - PAD_R) + '" y2="' + y + '"/>';
+        out += '<text class="axis-label" x="' + (PAD_L - 6) + '" y="' + (y + 3) + '" text-anchor="end">' + Math.round(v) + '</text>';
+      }
+
+      weeks.forEach(function (w, i) {
+        var cx = PAD_L + groupWidth * i + groupWidth / 2;
+        if (w.data) {
+          var d = w.data;
+          var vals = [
+            { v: d.newListings, cls: 'bar-new', ox: -barWidth - 1 },
+            { v: d.underContract, cls: 'bar-uc', ox: 0 },
+            { v: d.closed, cls: 'bar-closed', ox: barWidth + 1 }
+          ];
+          vals.forEach(function (b) {
+            if (b.v == null) return;
+            var y = scale(b.v, 0, vMax, H - PAD_B, PAD_T);
+            out += '<rect class="' + b.cls + '" x="' + (cx + b.ox - barWidth / 2) + '" y="' + y + '" width="' + barWidth + '" height="' + (H - PAD_B - y) + '" rx="1"/>';
+          });
+        } else {
+          out += '<text class="gap-marker" x="' + cx + '" y="' + ((H - PAD_B + PAD_T) / 2) + '" text-anchor="middle" transform="rotate(-90 ' + cx + ' ' + ((H - PAD_B + PAD_T) / 2) + ')">no segment</text>';
+        }
+        // X label (sparse)
+        if (i === 0 || i === weeks.length - 1 || i % 3 === 0) {
+          out += '<text class="axis-label-x" x="' + cx + '" y="' + (H - 14) + '" text-anchor="middle">' + monthDay(w.airDate) + '</text>';
+        }
+      });
+
+      svg.innerHTML = out;
+    }
+
+    // ---------- Active inventory chart ----------
+    function renderActiveChart(weeks) {
+      var svg = document.getElementById('chart-active');
+      var W = 520, H = 220, PAD_L = 40, PAD_R = 16, PAD_T = 20, PAD_B = 38;
+
+      var values = weeks.map(function (w) { return w.data ? w.data.activeHomes : null; });
+      var valid = values.filter(function (v) { return v != null; });
+      if (!valid.length) return;
+      var vMin = Math.floor(Math.min.apply(null, valid) / 10) * 10 - 10;
+      var vMax = Math.ceil(Math.max.apply(null, valid) / 10) * 10 + 10;
+
+      var points = weeks.map(function (w, i) {
+        var x = scale(i, 0, weeks.length - 1, PAD_L, W - PAD_R);
+        var v = w.data ? w.data.activeHomes : null;
+        return { x: x, y: v != null ? scale(v, vMin, vMax, H - PAD_B, PAD_T) : null, v: v, ep: monthDay(w.airDate) };
+      });
+
+      var out = gridAndAxes(PAD_L, PAD_R, PAD_T, PAD_B, W, H, vMin, vMax, 4);
+
+      var segs = pathSegments(points);
+      for (var i = 0; i < segs.length - 1; i++) {
+        var a = segs[i][segs[i].length - 1], b = segs[i + 1][0];
+        out += '<line stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4 3" opacity=".6" x1="' + a.x + '" y1="' + a.y + '" x2="' + b.x + '" y2="' + b.y + '"/>';
+      }
+      segs.forEach(function (s) { out += '<path class="line-active" d="' + pointsToPath(s) + '"/>'; });
+      points.forEach(function (p) { if (p.y != null) out += '<circle class="dot-active" cx="' + p.x + '" cy="' + p.y + '" r="3.5"/>'; });
+      points.forEach(function (p, i) {
+        if (i === 0 || i === points.length - 1 || i % 3 === 0) {
+          out += '<text class="axis-label-x" x="' + p.x + '" y="' + (H - 14) + '" text-anchor="middle">' + p.ep + '</text>';
+        }
+      });
+      var lastWith = points.slice().reverse().find(function (p) { return p.y != null; });
+      if (lastWith) {
+        out += '<text class="value-label" x="' + lastWith.x + '" y="' + (lastWith.y - 8) + '" text-anchor="middle">' + lastWith.v + '</text>';
+      }
+      svg.innerHTML = out;
+    }
+
+    // ---------- Posture timeline strip ----------
+    function renderPostureStrip(weeks) {
+      var strip = document.getElementById('posture-strip');
+      var html = weeks.map(function (w) {
+        if (!w.data) {
+          return '<div class="posture-cell p-gap" title="' + (w.gapReason || 'No data') + '">—<span class="posture-cell-ep">' + monthDay(w.airDate) + '</span></div>';
+        }
+        var p = w.data.posture || 'balanced';
+        return '<div class="posture-cell p-' + p + '" title="' + w.weekLabel + ' · ' + p.replace(/-/g, ' ') + '">' +
+          p.split('-')[0].charAt(0).toUpperCase() + p.split('-')[0].slice(1) +
+          '<span class="posture-cell-ep">' + monthDay(w.airDate) + '</span>' +
+          '</div>';
+      }).join('');
+      strip.innerHTML = html;
+    }
+
+    // ---------- Rate sparkline ----------
+    function renderRateSpark(weeks) {
+      var svg = document.getElementById('rate-spark');
+      var W = 200, H = 52;
+      var series = [];
+      weeks.forEach(function (w) {
+        if (w.data && w.data.interestRates) {
+          var r = w.data.interestRates;
+          var v = r.conventional != null ? r.conventional : (r.government != null ? r.government : null);
+          series.push({ ep: monthDay(w.airDate), v: v });
+        } else {
+          series.push({ ep: monthDay(w.airDate), v: null });
+        }
+      });
+      var valid = series.map(function (s) { return s.v; }).filter(function (v) { return v != null; });
+      if (valid.length < 2) {
+        document.getElementById('rate-current').textContent = '—';
+        document.getElementById('rate-sub').textContent = 'Not enough rate data reported yet';
+        return;
+      }
+      var vMin = Math.min.apply(null, valid) - 0.1;
+      var vMax = Math.max.apply(null, valid) + 0.1;
+      var pts = series.map(function (s, i) {
+        var x = scale(i, 0, series.length - 1, 4, W - 4);
+        var y = s.v != null ? scale(s.v, vMin, vMax, H - 6, 6) : null;
+        return { x: x, y: y, v: s.v };
+      });
+      var segs = pathSegments(pts);
+      var out = '';
+      // area
+      if (segs.length > 0) {
+        var first = segs[0], last = segs[segs.length - 1];
+        var area = 'M' + first[0].x + ',' + (H - 4) + ' ' + segs.map(pointsToPath).join(' ') + ' L' + last[last.length - 1].x + ',' + (H - 4) + ' Z';
+        out += '<path class="spark-area" d="' + area + '"/>';
+      }
+      for (var i = 0; i < segs.length - 1; i++) {
+        var a = segs[i][segs[i].length - 1], b = segs[i + 1][0];
+        out += '<line stroke="#e08910" stroke-width="1.5" stroke-dasharray="3 3" opacity=".5" x1="' + a.x + '" y1="' + a.y + '" x2="' + b.x + '" y2="' + b.y + '"/>';
+      }
+      segs.forEach(function (s) { out += '<path class="spark-line" d="' + pointsToPath(s) + '"/>'; });
+      var lastValidPt = pts.slice().reverse().find(function (p) { return p.y != null; });
+      if (lastValidPt) {
+        out += '<circle class="spark-dot" cx="' + lastValidPt.x + '" cy="' + lastValidPt.y + '" r="3"/>';
+      }
+      svg.innerHTML = out;
+
+      var latest = valid[valid.length - 1];
+      document.getElementById('rate-current').textContent = latest.toFixed(2) + '%';
+      document.getElementById('rate-sub').textContent = 'Latest rate from Rachel\'s reports — ' + valid.length + ' data points YTD';
+    }
+
+  })();
+  </script>
+
+</body>
+</html>
