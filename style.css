@@ -130,6 +130,27 @@ strong {
   color: var(--hl-dark);
 }
 
+/* Stack brand on top, center nav below on narrow screens */
+@media (max-width: 640px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+  }
+  .brand {
+    align-items: center;
+    text-align: center;
+  }
+  .header-nav {
+    justify-content: center;
+    gap: 0.35rem;
+  }
+  .header-nav .nav-link {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
+
 /* -------------- Hero -------------- */
 
 .hero {

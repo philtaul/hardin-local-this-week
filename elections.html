@@ -172,16 +172,23 @@
       font-size: 0.75rem; color: var(--gold); font-weight: 700;
       letter-spacing: 0.18em; text-transform: uppercase;
     }
-    .header-nav { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .header-nav { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: flex-end; }
     .header-nav .nav-link {
       color: var(--dim); font-size: 0.85rem; font-weight: 600;
       padding: 0.45rem 0.9rem;
       border: 1px solid var(--rule);
       border-radius: 999px;
       transition: all 0.15s ease;
+      white-space: nowrap;
     }
     .header-nav .nav-link:hover {
       color: var(--ink); border-color: var(--blue); background: rgba(72,133,237,0.12);
+    }
+    @media (max-width: 640px) {
+      .header-inner { flex-direction: column; align-items: stretch; gap: 0.65rem; }
+      .brand { align-items: center; text-align: center; }
+      .header-nav { justify-content: center; gap: 0.35rem; }
+      .header-nav .nav-link { font-size: 0.78rem; padding: 0.35rem 0.7rem; }
     }
 
     /* Main */
