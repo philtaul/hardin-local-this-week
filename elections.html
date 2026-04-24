@@ -184,11 +184,45 @@
     .header-nav .nav-link:hover {
       color: var(--ink); border-color: var(--blue); background: rgba(72,133,237,0.12);
     }
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--rule);
+      color: var(--ink);
+      border-radius: 999px;
+      width: 42px; height: 42px;
+      font-size: 1.15rem; line-height: 1;
+      cursor: pointer; padding: 0;
+      align-items: center; justify-content: center;
+      font-family: inherit;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .nav-toggle:hover,
+    .nav-toggle[aria-expanded="true"] {
+      background: rgba(72,133,237,0.12);
+      border-color: var(--blue);
+    }
     @media (max-width: 640px) {
-      .header-inner { flex-direction: column; align-items: stretch; gap: 0.65rem; }
-      .brand { align-items: center; text-align: center; }
-      .header-nav { justify-content: center; gap: 0.35rem; }
-      .header-nav .nav-link { font-size: 0.78rem; padding: 0.35rem 0.7rem; }
+      .header-inner {
+        flex-direction: row; align-items: center;
+        justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+      }
+      .nav-toggle { display: inline-flex; }
+      .header-nav.collapsible {
+        flex-basis: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin-top: 0.25rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid var(--rule);
+      }
+      .header-nav.collapsible.open { display: flex; }
+      .header-nav.collapsible .nav-link {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.95rem;
+        text-align: center;
+      }
     }
 
     /* Main */
@@ -475,7 +509,8 @@
         <span class="brand-name">Hardin Local</span>
         <span class="brand-tag">Civic Coverage</span>
       </div>
-      <nav class="header-nav" aria-label="Primary">
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="header-nav collapsible" id="site-nav" aria-label="Primary">
         <a href="index.html" class="nav-link">← This Week</a>
         <a href="roundabout.html" class="nav-link">Roundabout Guide</a>
         <a href="housing-market-update/" class="nav-link">Housing Market</a>
@@ -772,6 +807,7 @@
     </p>
   </footer>
 
+  <script src="site-nav.js" defer></script>
   <script>window.HL_API_URL = "https://hl-newsletter.phil-taul.workers.dev";</script>
   <script src="newsletter-popup.js"></script>
 </body>
