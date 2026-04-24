@@ -10,6 +10,7 @@ Static HTML site for Hardin Local community content, published via GitHub Pages.
 |---|---|---|
 | Events Calendar | `index.html` | Weekly Hardin County events (updated each Monday) |
 | Roundabout Guide | `roundabout.html` | Interactive guide to downtown E-town roundabout yield rule changes |
+| Election Interviews | `elections.html` | 2026 Primary Election Interview schedule (Fri 4/24, Mon 4/27, Wed 4/29) |
 
 ## Files
 
@@ -17,8 +18,9 @@ Static HTML site for Hardin Local community content, published via GitHub Pages.
 |---|---|
 | `index.html` | Events calendar — sponsor block, event listings, footer CTAs |
 | `roundabout.html` | Interactive roundabout guide — self-contained HTML/CSS/JS |
+| `elections.html` | 2026 Primary Election Interviews — dark theme, JSON-LD ItemList of BroadcastEvents |
 | `style.css` | Shared styles for events calendar (HL brand colors, print styles) |
-| `newsletter-popup.js` | Exit-intent email collection popup (shared by both pages) |
+| `newsletter-popup.js` | Exit-intent email collection popup (shared across pages) |
 | `dev/api.py` | Local dev API server for testing email collection |
 | `dev/worker/` | Cloudflare Worker + D1 schema for production email collection |
 
