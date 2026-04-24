@@ -75,11 +75,40 @@
     .brand { display: flex; flex-direction: column; line-height: 1.2; }
     .brand-name { font-size: 1.15rem; font-weight: 700; color: #fff; }
     .brand-tag  { font-size: .8rem; color: #c4c9d1; letter-spacing: .02em; }
+    .header-nav { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: flex-end; }
     .header-nav .nav-link {
       color: #fff; font-size: .9rem; font-weight: 500;
       padding: .4rem .85rem; border: 1px solid rgba(255,255,255,.3); border-radius: 999px;
+      white-space: nowrap;
     }
     .header-nav .nav-link:hover { background: #fff; color: var(--hl-dark); }
+    .header-nav .nav-link[aria-current="page"] {
+      background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.7);
+    }
+    .nav-toggle {
+      display: none;
+      background: transparent; border: 1px solid rgba(255,255,255,0.35);
+      color: #fff; border-radius: 999px;
+      width: 42px; height: 42px;
+      font-size: 1.15rem; line-height: 1;
+      cursor: pointer; padding: 0;
+      align-items: center; justify-content: center;
+      font-family: inherit;
+      transition: background 0.15s ease;
+    }
+    .nav-toggle:hover, .nav-toggle[aria-expanded="true"] { background: rgba(255,255,255,0.12); }
+    @media (max-width: 640px) {
+      .header-inner { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+      .nav-toggle { display: inline-flex; }
+      .header-nav.collapsible {
+        flex-basis: 100%; display: none;
+        flex-direction: column; gap: 0.4rem;
+        margin-top: 0.25rem; padding-top: 0.75rem;
+        border-top: 1px solid rgba(255,255,255,0.2);
+      }
+      .header-nav.collapsible.open { display: flex; }
+      .header-nav.collapsible .nav-link { font-size: 0.95rem; padding: 0.6rem 0.95rem; text-align: center; }
+    }
 
     /* --- Hero --- */
     .hero {
@@ -337,8 +366,12 @@
         <span class="brand-name">Hardin Local</span>
         <span class="brand-tag">Traffic Guide</span>
       </div>
-      <nav class="header-nav">
-        <a href="index.html" class="nav-link">Events Calendar</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="header-nav collapsible" id="site-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">📅 This Week</a>
+        <a href="elections.html" class="nav-link">🗳️ Election Interviews</a>
+        <a href="housing-market-update/" class="nav-link">🏡 Housing Market</a>
+        <a href="https://hardinlocal.com" class="nav-link">HardinLocal.com</a>
       </nav>
     </div>
   </header>
@@ -665,6 +698,7 @@
   </script>
 
   <!-- Newsletter popup (local dev — change URL for production) -->
+  <script src="site-nav.js" defer></script>
   <script>window.HL_API_URL = "https://hl-newsletter.phil-taul.workers.dev";</script>
   <script src="newsletter-popup.js"></script>
 </body>

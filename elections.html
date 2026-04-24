@@ -184,6 +184,9 @@
     .header-nav .nav-link:hover {
       color: var(--ink); border-color: var(--blue); background: rgba(72,133,237,0.12);
     }
+    .header-nav .nav-link[aria-current="page"] {
+      color: var(--ink); border-color: var(--blue); background: rgba(72,133,237,0.18);
+    }
     .nav-toggle {
       display: none;
       background: transparent;
@@ -511,9 +514,9 @@
       </div>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="header-nav collapsible" id="site-nav" aria-label="Primary">
-        <a href="index.html" class="nav-link">← This Week</a>
-        <a href="roundabout.html" class="nav-link">Roundabout Guide</a>
-        <a href="housing-market-update/" class="nav-link">Housing Market</a>
+        <a href="index.html" class="nav-link">📅 This Week</a>
+        <a href="elections.html" class="nav-link" aria-current="page">🗳️ Election Interviews</a>
+        <a href="housing-market-update/" class="nav-link">🏡 Housing Market</a>
         <a href="https://hardinlocal.com" class="nav-link">HardinLocal.com</a>
       </nav>
     </div>
@@ -565,7 +568,7 @@
             <div class="slot">
               <div class="time"><time datetime="2026-04-24T11:30">11:30a</time></div>
               <div>
-                <div class="name">Joseph Redmon</div>
+                <div class="name">Joseph Redmon <span class="party r" title="Republican">R</span></div>
                 <div class="office">State Rep, 27th District</div>
               </div>
             </div>
@@ -586,7 +589,7 @@
             <div class="slot">
               <div class="time"><time datetime="2026-04-24T15:15">3:15p</time></div>
               <div>
-                <div class="name">Vincent Thompson</div>
+                <div class="name">Vincent Thompson <span class="party d" title="Democratic">D</span></div>
                 <div class="office">U.S. Senate (Kentucky)</div>
               </div>
             </div>
@@ -655,7 +658,7 @@
             <div class="slot">
               <div class="time"><time datetime="2026-04-29T13:00">1:00p</time></div>
               <div>
-                <div class="name">Michael Faris</div>
+                <div class="name">Michael Faris <span class="party r" title="Republican">R</span></div>
                 <div class="office">U.S. Senate (Kentucky)</div>
               </div>
             </div>
@@ -745,7 +748,7 @@
     <section class="pending" aria-labelledby="pending-heading">
       <div class="section-head">
         <h2 id="pending-heading">Still to book</h2>
-        <span class="count">4 candidates · additional dates added as they confirm</span>
+        <span class="count">3 candidates · additional dates added as they confirm</span>
       </div>
       <div class="pending-grid">
         <div class="pending-card">
@@ -754,15 +757,11 @@
         </div>
         <div class="pending-card">
           <div class="p-name">Julie Cantwell</div>
-          <div class="p-office">State Rep, District 10</div>
+          <div class="p-office">State Rep, District 10 (R)</div>
         </div>
         <div class="pending-card">
           <div class="p-name">Chris Gatrost</div>
           <div class="p-office">Kentucky State Senate</div>
-        </div>
-        <div class="pending-card">
-          <div class="p-name">Jennifer Banks</div>
-          <div class="p-office">Vine Grove City Council</div>
         </div>
       </div>
     </section>

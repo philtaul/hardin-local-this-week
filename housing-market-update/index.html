@@ -22,8 +22,11 @@
         <span class="brand-name">Hardin Local Weekly</span>
         <span class="brand-tag">Housing Market Update</span>
       </div>
-      <nav class="header-nav">
-        <a href="../" class="nav-link">← Events</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="header-nav collapsible" id="site-nav" aria-label="Primary">
+        <a href="../" class="nav-link">📅 This Week</a>
+        <a href="../elections.html" class="nav-link">🗳️ Election Interviews</a>
+        <a href="./" class="nav-link" aria-current="page">🏡 Housing Market</a>
         <a href="https://hardinlocal.com" class="nav-link">HardinLocal.com</a>
       </nav>
     </div>
@@ -877,6 +880,7 @@
   })();
   </script>
 
+  <script src="../site-nav.js" defer></script>
   <script>window.HL_API_URL = "https://hl-newsletter.phil-taul.workers.dev";</script>
   <script src="../newsletter-popup.js"></script>
 </body>

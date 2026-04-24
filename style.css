@@ -130,6 +130,11 @@ strong {
   color: var(--hl-dark);
 }
 
+.header-nav .nav-link[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
 /* Hamburger toggle — hidden on desktop, shown on mobile */
 .nav-toggle {
   display: none;
