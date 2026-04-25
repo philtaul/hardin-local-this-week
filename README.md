@@ -10,7 +10,8 @@ Static HTML site for Hardin Local community content, published via GitHub Pages.
 |---|---|---|
 | Events Calendar | `index.html` | Weekly Hardin County events (updated each Monday) |
 | Roundabout Guide | `roundabout.html` | Interactive guide to downtown E-town roundabout yield rule changes |
-| Election Interviews | `elections.html` | 2026 Primary Election Interview schedule (Fri 4/24, Mon 4/27, Wed 4/29) |
+| Election Interviews | `elections.html` | 2026 Primary Election Interview schedule (Fri 4/24, Mon 4/27, Wed 4/29) — links to per-race pages |
+| Per-race election pages | `elections/{race}.html` | One page per office: sheriff, pva, magistrate (all 8 districts), mayor-radcliff, radcliff-council, mayor-vine-grove, vine-grove-council, state-federal. Each shows every filed candidate with a 16:9 embed slot. |
 
 ## Files
 
@@ -20,6 +21,7 @@ Static HTML site for Hardin Local community content, published via GitHub Pages.
 | `roundabout.html` | Interactive roundabout guide — self-contained HTML/CSS/JS |
 | `elections.html` | 2026 Primary Election Interviews — dark theme, JSON-LD ItemList of BroadcastEvents |
 | `style.css` | Shared styles for events calendar (HL brand colors, print styles) |
+| `elections/` | Per-race election pages (8 HTML files + shared `race-page.css`) — see "Editing per-race election pages" below |
 | `newsletter-popup.js` | Exit-intent email collection popup (shared across pages) |
 | `dev/api.py` | Local dev API server for testing email collection |
 | `dev/worker/` | Cloudflare Worker + D1 schema for production email collection |
@@ -57,6 +59,34 @@ python3 -m http.server 8765 --directory . &
 cd dev/worker
 npx wrangler deploy
 ```
+
+## Editing per-race election pages
+
+Per-race pages live in `elections/`. They share `elections/race-page.css`. Each candidate has a 16:9 embed slot — currently a `<div class="embed-placeholder">` for candidates without an edited video, and a `<iframe>` for candidates with one.
+
+**Swap a placeholder to a YouTube embed (when an edited video is published):**
+
+In the candidate's `<div class="embed-wrap">` block:
+1. Uncomment the `<iframe src="https://www.youtube.com/embed/VIDEO_ID">` line that's already there in the TODO comment, replacing `VIDEO_ID` with the real YouTube ID
+2. Delete the entire `<div class="embed-placeholder">…</div>` block
+
+That's it — two-line swap per video.
+
+**Optional: add a "📘 Also on Facebook" pill below the embed.** In the candidate's `<div class="candidate-foot">` add:
+```html
+<a class="fb-link" href="https://www.facebook.com/share/v/XXXXXXX/" target="_blank" rel="noopener">📘 Also on Facebook →</a>
+```
+
+**Add a candidate (e.g., reschedule Vincent Thompson into a new slot):** Copy a sibling card in the same race page, change name + party + ballot position + filed date + interview time. Update the page's candidate count in the hero `.race-meta` pill if it changes.
+
+**Local preview before pushing:**
+```bash
+cd ~/hardin-local-this-week
+python3 -m http.server 8787
+# open http://localhost:8787/elections/sheriff.html
+```
+
+**Source of truth for candidate data:** the Hardin County Clerk filing list, mirrored in the vault at `hardin-local/Stand Alone Livestreams/Hardin County Elections/Potential Interviews - Full Candidate List - Hardin County Elections 2026.md`. State and federal races aren't in that list — for those, check `elect.ky.gov` and the project's outreach records.
 
 ## Brand colors
 
