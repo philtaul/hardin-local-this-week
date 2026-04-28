@@ -3,8 +3,8 @@
     "market": "Elizabethtown & Hardin County, Kentucky",
     "attribution": "Compiled by The Brantingham Group (KW)",
     "contributor": "Rachel Brantingham",
-    "lastUpdated": "2026-04-21",
-    "lastEpisode": "S2026E17",
+    "lastUpdated": "2026-04-28",
+    "lastEpisode": "S2026E18",
     "notes": [
       "E10 pricing (avg list $309,198 / avg sold $291,142) is preliminary pending Rachel confirmation — ~$40K below adjacent weeks.",
       "E11/E12 median values are approximate — Rachel's submission repeated the average list price in the median field.",
@@ -397,6 +397,39 @@
         "postureDesc": "Clear seller-leaning market — momentum building",
         "gapDirection": "tightened-significantly",
         "marketPace": "gaining"
+      },
+      "episodeLink": null,
+      "standaloneVideoLink": null
+    },
+    {
+      "episode": "S2026E18",
+      "airDate": "2026-04-28",
+      "weekLabel": "Week of April 21 – April 28",
+      "data": {
+        "newListings": 35,
+        "underContract": 29,
+        "closed": 26,
+        "avgDaysOnMarket": 77,
+        "activeHomes": 356,
+        "activeHomesApproximate": false,
+        "soldLast30Days": 113,
+        "soldLast30DaysApproximate": false,
+        "monthsInventory": 3.1,
+        "avgListPrice": 359143,
+        "avgSoldPrice": 309095,
+        "medianListPrice": null,
+        "medianSoldPrice": 294700,
+        "interestRates": { "conventional": 5.99, "government": 5.75, "label": "5.75% gov / 5.99% conv" },
+        "posture": "seller-leaning",
+        "postureDesc": "Competitive spring market — tightest inventory of the year, layered by price tier (under $400K hottest)",
+        "gapDirection": "tight",
+        "marketPace": "gaining",
+        "priceTiers": [
+          { "label": "Under $250K", "activeListings": 78, "daysOnMarket": 73 },
+          { "label": "$250K–$400K", "activeListings": 170, "daysOnMarket": 75 },
+          { "label": "$400K+", "activeListings": 113, "daysOnMarket": 87 },
+          { "label": "Luxury ($800K+)", "activeListings": 18, "daysOnMarket": 112 }
+        ]
       },
       "episodeLink": null,
       "standaloneVideoLink": null
