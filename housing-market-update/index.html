@@ -74,6 +74,14 @@
       </div>
     </section>
 
+    <section class="dash-section" id="tier-section" hidden>
+      <h2 class="dash-section-title">Where The Market Is Moving — By Price Tier</h2>
+      <div class="dash-grid" id="tier-grid">
+        <!-- Populated by JS -->
+      </div>
+      <p class="tier-note" id="tier-note" style="margin-top:.85rem; color:#9ca3af; font-size:.85rem; line-height:1.5;"></p>
+    </section>
+
     <section class="dash-section">
       <div id="posture-callout" class="posture-callout">
         <div class="posture-body">
@@ -271,6 +279,7 @@
       renderHero(current);
       renderThisWeek(current, previous);
       renderPricing(current);
+      renderPriceTiers(current);
       renderPosture(current);
       renderMicroCards(current, previous, withData);
       renderDomChart(weeks);
@@ -374,6 +383,49 @@
           '</div>';
       }
       document.getElementById('pricing-grid').innerHTML = html;
+    }
+
+    // ---------- Price-tier breakdown ----------
+    function renderPriceTiers(cur) {
+      var section = document.getElementById('tier-section');
+      var grid = document.getElementById('tier-grid');
+      var note = document.getElementById('tier-note');
+      var tiers = cur.data && cur.data.priceTiers;
+
+      if (!tiers || !tiers.length) {
+        section.hidden = true;
+        return;
+      }
+      section.hidden = false;
+
+      var fastest = tiers.reduce(function (a, b) { return a.daysOnMarket < b.daysOnMarket ? a : b; });
+      var slowest = tiers.reduce(function (a, b) { return a.daysOnMarket > b.daysOnMarket ? a : b; });
+
+      function heatFor(dom) {
+        if (dom <= 78) return { accent: 'green', value: 'value-green', label: '🔥 Hottest' };
+        if (dom <= 90) return { accent: 'blue', value: 'value-blue', label: '📈 Absorbing' };
+        if (dom <= 105) return { accent: 'orange', value: 'value-orange', label: '⚖️ Steady' };
+        return { accent: 'orange', value: 'value-orange', label: '🐢 Slower' };
+      }
+
+      grid.innerHTML = tiers.map(function (t) {
+        var heat = heatFor(t.daysOnMarket);
+        var isFastest = t === fastest ? ' · fastest' : '';
+        var isSlowest = t === slowest ? ' · slowest' : '';
+        return '<div class="stat-card accent-' + heat.accent + '">' +
+          '<div class="stat-label">' + t.label + '</div>' +
+          '<div class="stat-value ' + heat.value + '">' + t.activeListings + '</div>' +
+          '<div class="stat-meta">active · <strong>' + t.daysOnMarket + ' days</strong> on market</div>' +
+          '<div class="stat-delta ' + (heat.accent === 'green' ? 'down' : (heat.accent === 'orange' ? 'up' : 'flat')) + '" style="margin-top:.45rem">' +
+          heat.label + isFastest + isSlowest +
+          '</div>' +
+          '</div>';
+      }).join('');
+
+      var spread = slowest.daysOnMarket - fastest.daysOnMarket;
+      note.textContent = 'Demand concentrates where days-on-market is lowest. ' +
+        fastest.label + ' is moving fastest at ' + fastest.daysOnMarket + ' days; ' +
+        slowest.label + ' is sitting longest at ' + slowest.daysOnMarket + ' days — a ' + spread + '-day spread across tiers.';
     }
 
     // ---------- Posture ----------
