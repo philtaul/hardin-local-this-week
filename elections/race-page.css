@@ -365,6 +365,24 @@ main { position: relative; z-index: 1; }
   background: rgba(72,133,237,0.32);
   color: #fff;
 }
+.candidate-foot .yt-live-link {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  align-self: flex-start;
+  margin-top: 0.15rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.04em;
+  background: rgba(239,68,68,0.18);
+  border: 1px solid rgba(239,68,68,0.45);
+  color: var(--red-soft);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.candidate-foot .yt-live-link:hover {
+  background: rgba(239,68,68,0.32);
+  color: #fff;
+}
 
 .ge-notice {
   max-width: 1100px; margin: 2.5rem auto 0; padding: 0 1.5rem;
