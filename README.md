@@ -11,7 +11,7 @@ Static HTML site for Hardin Local community content, published via GitHub Pages.
 | Events Calendar | `index.html` | Weekly Hardin County events (updated each Monday) |
 | Roundabout Guide | `roundabout.html` | Interactive guide to downtown E-town roundabout yield rule changes |
 | Election Interviews | `elections.html` | 2026 Primary Election Interview schedule (Fri 4/24, Mon 4/27, Wed 4/29) — links to per-race pages |
-| Per-race election pages | `elections/{race}.html` | One page per office: sheriff, pva, magistrate (all 8 districts), mayor-radcliff, radcliff-council, mayor-vine-grove, vine-grove-council, state-federal. Each shows every filed candidate with a 16:9 embed slot. |
+| Per-race election pages | `elections/{race}.html` | One page per office: sheriff, pva, magistrate (all 8 districts), mayor-radcliff, radcliff-council, mayor-vine-grove, state-federal. Each shows every filed candidate with a 16:9 embed slot. |
 
 ## Files
 
@@ -21,7 +21,7 @@ Static HTML site for Hardin Local community content, published via GitHub Pages.
 | `roundabout.html` | Interactive roundabout guide — self-contained HTML/CSS/JS |
 | `elections.html` | 2026 Primary Election Interviews — dark theme, JSON-LD ItemList of BroadcastEvents |
 | `style.css` | Shared styles for events calendar (HL brand colors, print styles) |
-| `elections/` | Per-race election pages (8 HTML files + shared `race-page.css`) — see "Editing per-race election pages" below |
+| `elections/` | Per-race election pages (7 HTML files + shared `race-page.css`) — see "Editing per-race election pages" below |
 | `newsletter-popup.js` | Exit-intent email collection popup (shared across pages) |
 | `dev/api.py` | Local dev API server for testing email collection |
 | `dev/worker/` | Cloudflare Worker + D1 schema for production email collection |
