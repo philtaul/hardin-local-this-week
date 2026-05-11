@@ -1,0 +1,536 @@
+{
+  "races": [
+    {
+      "race_name_raw": "UNITED STATES SENATOR",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "ALL PRECINCTS",
+      "candidates": [
+        {
+          "name": "Anissa Catlett",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "A. Nick Shelley",
+          "party": "R",
+          "ballot_position": 2
+        },
+        {
+          "name": "Valerie \"Dr Val\" Fredrick",
+          "party": "R",
+          "ballot_position": 3
+        },
+        {
+          "name": "Michael James Faris",
+          "party": "R",
+          "ballot_position": 4
+        },
+        {
+          "name": "Nate Morris",
+          "party": "R",
+          "ballot_position": 5
+        },
+        {
+          "name": "Donald Wenzel",
+          "party": "R",
+          "ballot_position": 6
+        },
+        {
+          "name": "Jonathan M. Holliday",
+          "party": "R",
+          "ballot_position": 7
+        },
+        {
+          "name": "George Washington",
+          "party": "R",
+          "ballot_position": 8
+        },
+        {
+          "name": "Andy Barr",
+          "party": "R",
+          "ballot_position": 9
+        },
+        {
+          "name": "Daniel Cameron",
+          "party": "R",
+          "ballot_position": 10
+        },
+        {
+          "name": "Jimmy I. Leon",
+          "party": "R",
+          "ballot_position": 11
+        },
+        {
+          "name": "James D. Duncan",
+          "party": "R",
+          "ballot_position": 12
+        }
+      ]
+    },
+    {
+      "race_name_raw": "UNITED STATES REPRESENTATIVE / in CONGRESS / 2nd Congressional District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "ALL PRECINCTS",
+      "candidates": [
+        {
+          "name": "G. \"Shay\" Perry-Adelmann",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "S. Brett Guthrie",
+          "party": "R",
+          "ballot_position": 2
+        },
+        {
+          "name": "Joshua M. Ferguson",
+          "party": "R",
+          "ballot_position": 3
+        }
+      ]
+    },
+    {
+      "race_name_raw": "STATE SENATOR / 10th Senatorial District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "ALL PRECINCTS",
+      "candidates": [
+        {
+          "name": "Matt Deneen",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Louis Grider",
+          "party": "R",
+          "ballot_position": 2
+        }
+      ]
+    },
+    {
+      "race_name_raw": "STATE REPRESENTATIVE / 10th Representative District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "VETERANS, HELMWOOD HEIGHTS, PATRIOT, CECILIA, ST. JOHN, HOWEVALLEY, RINEYVILLE SOUTH, RINEYVILLE NORTH, RINEYVILLE WEST, VINE GROVE EAST, VINE GROVE WEST, VINE GROVE SOUTH and YATES",
+      "candidates": [
+        {
+          "name": "Josh Calloway",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Julie Cantwell",
+          "party": "R",
+          "ballot_position": 2
+        }
+      ]
+    },
+    {
+      "race_name_raw": "STATE REPRESENTATIVE / 27th Representative District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "RADCLIFF EAST, RADCLIFF NORTH, RADCLIFF NORTHWEST, RADCLIFF WEST, RED HILL, RADCLIFF SOUTHWEST, FORT KNOX 27, RADCLIFF SOUTH and PARKWAY",
+      "candidates": [
+        {
+          "name": "Paul Smith",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Joseph Redmon",
+          "party": "R",
+          "ballot_position": 2
+        },
+        {
+          "name": "Sandra Carter",
+          "party": "R",
+          "ballot_position": 3
+        },
+        {
+          "name": "Rachelle Frazier",
+          "party": "R",
+          "ballot_position": 4
+        }
+      ]
+    },
+    {
+      "race_name_raw": "PROPERTY VALUATION ADMINISTRATOR",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "ALL PRECINCTS",
+      "candidates": [
+        {
+          "name": "Michelle Pirtle Bowen",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Dennis Davis",
+          "party": "R",
+          "ballot_position": 2
+        },
+        {
+          "name": "Casey Overstreet",
+          "party": "R",
+          "ballot_position": 3
+        }
+      ]
+    },
+    {
+      "race_name_raw": "SHERIFF",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "ALL PRECINCTS",
+      "candidates": [
+        {
+          "name": "Willie Oden",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Brian C. Sankey",
+          "party": "R",
+          "ballot_position": 2
+        }
+      ]
+    },
+    {
+      "race_name_raw": "MAGISTRATE / 4th Magisterial District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "MANTLE, FREEMAN, OAKLAWN, PINE VALLEY, HELMWOOD HEIGHTS and HELM",
+      "candidates": [
+        {
+          "name": "Christy Gordon",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Fred Clem Jr.",
+          "party": "R",
+          "ballot_position": 2
+        }
+      ]
+    },
+    {
+      "race_name_raw": "CONSTABLE / 4th Magisterial District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "MANTLE, FREEMAN, OAKLAWN, PINE VALLEY, HELMWOOD HEIGHTS and HELM",
+      "candidates": [
+        {
+          "name": "Brandon K. Curry",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Gerry Perkins",
+          "party": "R",
+          "ballot_position": 2
+        }
+      ]
+    },
+    {
+      "race_name_raw": "MAGISTRATE / 5th Magisterial District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "CENTRAL, ELIZABETHTOWN NORTH, ELIZABETHTOWN WEST, VALLEY CREEK, MEMORIAL, VAN METER CITY and HAYCRAFT",
+      "candidates": [
+        {
+          "name": "Wayne M. Ray",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Aaron Pennington",
+          "party": "R",
+          "ballot_position": 2
+        }
+      ]
+    },
+    {
+      "race_name_raw": "MAGISTRATE / 6th Magisterial District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "VAN METER, CHELF, COUNTRY CLUB,GLENDALE,SOUTH DIXIE, SONORA and UPTON",
+      "candidates": [
+        {
+          "name": "Nicholas Lee Simpson",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "William Jason Buckles",
+          "party": "R",
+          "ballot_position": 2
+        },
+        {
+          "name": "T. Stacy Reynolds",
+          "party": "R",
+          "ballot_position": 3
+        }
+      ]
+    },
+    {
+      "race_name_raw": "MAGISTRATE / 7th Magisterial District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "EASTVIEW, STEPHENSBURG, MEETING CREEK, WHITE MILLS, PATRIOT, CECILIA, ST. JOHN, HOWEVALLEY and RINEYVILLE SOUTH",
+      "candidates": [
+        {
+          "name": "Larry Allen Hicks",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Zach Humphrey",
+          "party": "R",
+          "ballot_position": 2
+        },
+        {
+          "name": "Robin L. Geary",
+          "party": "R",
+          "ballot_position": 3
+        }
+      ]
+    },
+    {
+      "race_name_raw": "MAGISTRATE / 8th Magisterial District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "RINEYVILLE NORTH, RINEYVILLE WEST, VINE GROVE EAST, VINE GROVE WEST, VINE GROVE SOUTH and YATES",
+      "candidates": [
+        {
+          "name": "Kenny Muse",
+          "party": "R",
+          "ballot_position": 1
+        },
+        {
+          "name": "Jonathan \"Jon\" Breeding",
+          "party": "R",
+          "ballot_position": 2
+        }
+      ]
+    },
+    {
+      "race_name_raw": "UNITED STATES SENATOR",
+      "party": "D",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "ALL PRECINCTS",
+      "candidates": [
+        {
+          "name": "Logan Forsythe",
+          "party": "D",
+          "ballot_position": 1
+        },
+        {
+          "name": "Amy McGrath",
+          "party": "D",
+          "ballot_position": 2
+        },
+        {
+          "name": "Dale Lewis Romans",
+          "party": "D",
+          "ballot_position": 3
+        },
+        {
+          "name": "Joshua Blanton Sr.",
+          "party": "D",
+          "ballot_position": 4
+        },
+        {
+          "name": "Vincent Anthony Thompson",
+          "party": "D",
+          "ballot_position": 5
+        },
+        {
+          "name": "Charles Booker",
+          "party": "D",
+          "ballot_position": 6
+        },
+        {
+          "name": "Pamela Stevenson",
+          "party": "D",
+          "ballot_position": 7
+        }
+      ]
+    },
+    {
+      "race_name_raw": "UNITED STATES REPRESENTATIVE / in CONGRESS / 2nd Congressional District",
+      "party": "D",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "ALL PRECINCTS",
+      "candidates": [
+        {
+          "name": "David S. Hatfield",
+          "party": "D",
+          "ballot_position": 1
+        },
+        {
+          "name": "Megan Wingfield",
+          "party": "D",
+          "ballot_position": 2
+        },
+        {
+          "name": "Hank Linderman",
+          "party": "D",
+          "ballot_position": 3
+        },
+        {
+          "name": "William Dakota Compton",
+          "party": "D",
+          "ballot_position": 4
+        }
+      ]
+    },
+    {
+      "race_name_raw": "MAYOR / City of Radcliff",
+      "party": "NP",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "RADCLIFF EAST, RADCLIFF NORTH, RADCLIFF NORTHWEST, RADCLIFF WEST, RED HILL, RADCLIFF SOUTHWEST, RADCLIFF SOUTHEAST, SHELTON, WOODLAND and PARKWAY; Part of VETERANS, RADCLIFF SOUTH and HELM",
+      "candidates": [
+        {
+          "name": "Douglas H. Goodman",
+          "party": "NP",
+          "ballot_position": 1
+        },
+        {
+          "name": "Terry Owens",
+          "party": "NP",
+          "ballot_position": 2
+        },
+        {
+          "name": "Michelle Mitchell",
+          "party": "NP",
+          "ballot_position": 3
+        },
+        {
+          "name": "Toshie Murrell",
+          "party": "NP",
+          "ballot_position": 4
+        }
+      ]
+    },
+    {
+      "race_name_raw": "CITY COUNCIL / City of Radcliff",
+      "party": "NP",
+      "vote_for": 6,
+      "vote_for_text": "(Vote for up to Six)",
+      "scope_text": "RADCLIFF EAST, RADCLIFF NORTH, RADCLIFF NORTHWEST, RADCLIFF WEST, RED HILL, RADCLIFF SOUTHWEST, RADCLIFF SOUTHEAST, SHELTON, WOODLAND and PARKWAY; Part of VETERANS, RADCLIFF SOUTH and HELM",
+      "candidates": [
+        {
+          "name": "LaQuita Y. Gaskins",
+          "party": "NP",
+          "ballot_position": 1
+        },
+        {
+          "name": "Emmanouil Konstantinidis",
+          "party": "NP",
+          "ballot_position": 2
+        },
+        {
+          "name": "Mitchell McLaurin",
+          "party": "NP",
+          "ballot_position": 3
+        },
+        {
+          "name": "Jerry Brown",
+          "party": "NP",
+          "ballot_position": 4
+        },
+        {
+          "name": "Serenity Johnson",
+          "party": "NP",
+          "ballot_position": 5
+        },
+        {
+          "name": "Aundra Lett Jackson",
+          "party": "NP",
+          "ballot_position": 6
+        },
+        {
+          "name": "Alyssa Cager-Booi",
+          "party": "NP",
+          "ballot_position": 7
+        },
+        {
+          "name": "Steve Crum",
+          "party": "NP",
+          "ballot_position": 8
+        },
+        {
+          "name": "Bryan L Packard",
+          "party": "NP",
+          "ballot_position": 9
+        },
+        {
+          "name": "Robert \"Bob\" Mahanna",
+          "party": "NP",
+          "ballot_position": 10
+        },
+        {
+          "name": "Maria Bell",
+          "party": "NP",
+          "ballot_position": 11
+        },
+        {
+          "name": "Lynnette Kennedy",
+          "party": "NP",
+          "ballot_position": 12
+        },
+        {
+          "name": "Pamela J. DeRoche",
+          "party": "NP",
+          "ballot_position": 13
+        },
+        {
+          "name": "Kim Thompson",
+          "party": "NP",
+          "ballot_position": 14
+        }
+      ]
+    },
+    {
+      "race_name_raw": "MAYOR / City of Vine Grove",
+      "party": "NP",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "scope_text": "VINE GROVE EAST and VINE GROVE WEST",
+      "candidates": [
+        {
+          "name": "Pamela Ogden",
+          "party": "NP",
+          "ballot_position": 1
+        },
+        {
+          "name": "Craig Boyer Jr.",
+          "party": "NP",
+          "ballot_position": 2
+        },
+        {
+          "name": "Selena Hudson",
+          "party": "NP",
+          "ballot_position": 3
+        }
+      ]
+    }
+  ]
+}

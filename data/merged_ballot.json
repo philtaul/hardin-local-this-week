@@ -1,0 +1,1678 @@
+{
+  "_meta": {
+    "merged_from": [
+      "full-ballot.json",
+      "candidates.json"
+    ],
+    "merged_on": "2026-05-09",
+    "total_races": 18,
+    "total_candidates": 74,
+    "total_interviewed": 44
+  },
+  "races": [
+    {
+      "race_slug": "mayor-radcliff",
+      "race_name": "Mayor of Radcliff",
+      "party": "NP",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "mayor-radcliff.html",
+      "race_anchor": "",
+      "what_at_stake": "Four-year term. The Mayor runs Radcliff city government — police, public works, planning. Winner takes all on May 19 — no November runoff.",
+      "scope": {
+        "precinct_codes": [
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B006",
+          "D006"
+        ],
+        "has_partial": true,
+        "partial_codes": [
+          "A007",
+          "B001",
+          "D006"
+        ],
+        "raw": "RADCLIFF EAST, RADCLIFF NORTH, RADCLIFF NORTHWEST, RADCLIFF WEST, RED HILL, RADCLIFF SOUTHWEST, RADCLIFF SOUTHEAST, SHELTON, WOODLAND and PARKWAY; Part of VETERANS, RADCLIFF SOUTH and HELM"
+      },
+      "candidates": [
+        {
+          "name": "Douglas H. Goodman",
+          "party": "NP",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "mayor-radcliff"
+          }
+        },
+        {
+          "name": "Terry Owens",
+          "party": "NP",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": "4nLvDPQzbAM",
+            "facebook_url": "https://www.facebook.com/reel/963864279876952",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 7:30 PM (Election Marathon)",
+            "registered": true,
+            "matched_race_slug": "mayor-radcliff"
+          }
+        },
+        {
+          "name": "Michelle Mitchell",
+          "party": "NP",
+          "ballot_position": 3,
+          "interview": {
+            "youtube_id": "SLKVidww6bs",
+            "facebook_url": "https://www.facebook.com/reel/1449365442991853",
+            "youtube_live_url": "https://www.youtube.com/watch?v=Ef37vHAV_Yc",
+            "interview_time": "Mon, April 27 · 3:15 PM",
+            "registered": true,
+            "matched_race_slug": "mayor-radcliff"
+          }
+        },
+        {
+          "name": "Toshie Murrell",
+          "party": "NP",
+          "ballot_position": 4,
+          "interview": {
+            "youtube_id": "j7dAiJNLyq0",
+            "facebook_url": "https://www.facebook.com/reel/962142036565865",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 4:30 PM (Election Marathon)",
+            "registered": true,
+            "matched_race_slug": "mayor-radcliff"
+          }
+        }
+      ],
+      "race_name_raw": "MAYOR / City of Radcliff",
+      "category": "Local · City",
+      "sort_category": 10,
+      "sort_office": 1
+    },
+    {
+      "race_slug": "mayor-vine-grove",
+      "race_name": "Mayor of Vine Grove",
+      "party": "NP",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "mayor-vine-grove.html",
+      "race_anchor": "",
+      "what_at_stake": "Four-year term. The Mayor runs Vine Grove city government. Winner takes all on May 19 — no November runoff.",
+      "scope": {
+        "precinct_codes": [
+          "H005",
+          "H006"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "VINE GROVE EAST and VINE GROVE WEST"
+      },
+      "candidates": [
+        {
+          "name": "Pamela Ogden",
+          "party": "NP",
+          "ballot_position": 1,
+          "interview": null
+        },
+        {
+          "name": "Craig Boyer Jr.",
+          "party": "NP",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "mayor-vine-grove"
+          }
+        },
+        {
+          "name": "Selena Hudson",
+          "party": "NP",
+          "ballot_position": 3,
+          "interview": {
+            "youtube_id": "F24qD2JFKXo",
+            "facebook_url": "https://www.facebook.com/reel/1488206532693331",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 2:00 PM (Election Marathon)",
+            "registered": true,
+            "matched_race_slug": "mayor-vine-grove"
+          }
+        }
+      ],
+      "race_name_raw": "MAYOR / City of Vine Grove",
+      "category": "Local · City",
+      "sort_category": 10,
+      "sort_office": 2
+    },
+    {
+      "race_slug": "radcliff-council",
+      "race_name": "Radcliff City Council (six seats)",
+      "party": "NP",
+      "vote_for": 6,
+      "vote_for_text": "(Vote for up to Six)",
+      "race_file": "radcliff-council.html",
+      "race_anchor": "",
+      "what_at_stake": "Two-year terms for six at-large city council seats. The council writes Radcliff's ordinances and budget. Top six finishers win outright on May 19 — no November runoff.",
+      "scope": {
+        "precinct_codes": [
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B006",
+          "D006"
+        ],
+        "has_partial": true,
+        "partial_codes": [
+          "A007",
+          "B001",
+          "D006"
+        ],
+        "raw": "RADCLIFF EAST, RADCLIFF NORTH, RADCLIFF NORTHWEST, RADCLIFF WEST, RED HILL, RADCLIFF SOUTHWEST, RADCLIFF SOUTHEAST, SHELTON, WOODLAND and PARKWAY; Part of VETERANS, RADCLIFF SOUTH and HELM"
+      },
+      "candidates": [
+        {
+          "name": "LaQuita Y. Gaskins",
+          "party": "NP",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Emmanouil Konstantinidis",
+          "party": "NP",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Mitchell McLaurin",
+          "party": "NP",
+          "ballot_position": 3,
+          "interview": {
+            "youtube_id": "ZXoDWVYTSu0",
+            "facebook_url": "https://www.facebook.com/reel/1658795738602515",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 6:30 PM (Marathon)",
+            "registered": true,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Jerry Brown",
+          "party": "NP",
+          "ballot_position": 4,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Serenity Johnson",
+          "party": "NP",
+          "ballot_position": 5,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Aundra Lett Jackson",
+          "party": "NP",
+          "ballot_position": 6,
+          "interview": {
+            "youtube_id": "0MNgvNQMbg4",
+            "facebook_url": "https://www.facebook.com/share/v/1CS3mxEYAE/",
+            "youtube_live_url": "https://www.youtube.com/watch?v=OCWnYx-1jvs",
+            "interview_time": "Fri, April 24 · 1:45 PM",
+            "registered": true,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Alyssa Cager-Booi",
+          "party": "NP",
+          "ballot_position": 7,
+          "interview": {
+            "youtube_id": "gXeANC-PM8o",
+            "facebook_url": "https://www.facebook.com/reel/938358012251645",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 3:30 PM (Marathon)",
+            "registered": true,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Steve Crum",
+          "party": "NP",
+          "ballot_position": 8,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Bryan L Packard",
+          "party": "NP",
+          "ballot_position": 9,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Robert \"Bob\" Mahanna",
+          "party": "NP",
+          "ballot_position": 10,
+          "interview": {
+            "youtube_id": "5BlfTREp49s",
+            "facebook_url": "https://www.facebook.com/reel/1643898176659177",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 7:00 PM (Marathon)",
+            "registered": true,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Maria Bell",
+          "party": "NP",
+          "ballot_position": 11,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Lynnette Kennedy",
+          "party": "NP",
+          "ballot_position": 12,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Pamela J. DeRoche",
+          "party": "NP",
+          "ballot_position": 13,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        },
+        {
+          "name": "Kim Thompson",
+          "party": "NP",
+          "ballot_position": 14,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "radcliff-council"
+          }
+        }
+      ],
+      "race_name_raw": "CITY COUNCIL / City of Radcliff",
+      "category": "Local · City",
+      "sort_category": 10,
+      "sort_office": 3
+    },
+    {
+      "race_slug": "magistrate-4",
+      "race_name": "Magistrate, District 4",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "magistrate.html",
+      "race_anchor": "d4",
+      "what_at_stake": "Four-year term on Hardin County Fiscal Court. Magistrates set the county budget and tax rates.",
+      "scope": {
+        "precinct_codes": [
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "MANTLE, FREEMAN, OAKLAWN, PINE VALLEY, HELMWOOD HEIGHTS and HELM"
+      },
+      "candidates": [
+        {
+          "name": "Christy Gordon",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": "cOSqZfL_EiM",
+            "facebook_url": "https://www.facebook.com/reel/1635761347662799",
+            "youtube_live_url": "https://www.youtube.com/watch?v=u7UAl-7HVJQ",
+            "interview_time": "Mon, April 27 · 5:00 PM",
+            "registered": true,
+            "matched_race_slug": "magistrate"
+          }
+        },
+        {
+          "name": "Fred Clem Jr.",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "magistrate"
+          }
+        }
+      ],
+      "race_name_raw": "MAGISTRATE / 4th Magisterial District",
+      "category": "Local · County",
+      "sort_category": 20,
+      "sort_office": 4
+    },
+    {
+      "race_slug": "magistrate-5",
+      "race_name": "Magistrate, District 5",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "magistrate.html",
+      "race_anchor": "d5",
+      "what_at_stake": "Four-year term on Hardin County Fiscal Court.",
+      "scope": {
+        "precinct_codes": [
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "E005",
+          "E006",
+          "E007"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "CENTRAL, ELIZABETHTOWN NORTH, ELIZABETHTOWN WEST, VALLEY CREEK, MEMORIAL, VAN METER CITY and HAYCRAFT"
+      },
+      "candidates": [
+        {
+          "name": "Wayne M. Ray",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "magistrate"
+          }
+        },
+        {
+          "name": "Aaron Pennington",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "magistrate"
+          }
+        }
+      ],
+      "race_name_raw": "MAGISTRATE / 5th Magisterial District",
+      "category": "Local · County",
+      "sort_category": 20,
+      "sort_office": 5
+    },
+    {
+      "race_slug": "magistrate-6",
+      "race_name": "Magistrate, District 6",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "magistrate.html",
+      "race_anchor": "d6",
+      "what_at_stake": "Four-year term on Hardin County Fiscal Court.",
+      "scope": {
+        "precinct_codes": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005",
+          "F006",
+          "F007"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "VAN METER, CHELF, COUNTRY CLUB,GLENDALE,SOUTH DIXIE, SONORA and UPTON"
+      },
+      "candidates": [
+        {
+          "name": "Nicholas Lee Simpson",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "magistrate"
+          }
+        },
+        {
+          "name": "William Jason Buckles",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": "QXevhY2Lk6Q",
+            "facebook_url": "https://www.facebook.com/reel/1723124565719472",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 1:30 PM (Marathon)",
+            "registered": true,
+            "matched_race_slug": "magistrate"
+          }
+        },
+        {
+          "name": "T. Stacy Reynolds",
+          "party": "R",
+          "ballot_position": 3,
+          "interview": {
+            "youtube_id": "1_3-wkwOeMc",
+            "facebook_url": "https://www.facebook.com/reel/1949251502352038",
+            "youtube_live_url": "https://www.youtube.com/watch?v=tk5JmT8Ipo0",
+            "interview_time": "Mon, April 27 · 2:00 PM",
+            "registered": true,
+            "matched_race_slug": "magistrate"
+          }
+        }
+      ],
+      "race_name_raw": "MAGISTRATE / 6th Magisterial District",
+      "category": "Local · County",
+      "sort_category": 20,
+      "sort_office": 6
+    },
+    {
+      "race_slug": "magistrate-7",
+      "race_name": "Magistrate, District 7",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "magistrate.html",
+      "race_anchor": "d7",
+      "what_at_stake": "Four-year term on Hardin County Fiscal Court.",
+      "scope": {
+        "precinct_codes": [
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "EASTVIEW, STEPHENSBURG, MEETING CREEK, WHITE MILLS, PATRIOT, CECILIA, ST. JOHN, HOWEVALLEY and RINEYVILLE SOUTH"
+      },
+      "candidates": [
+        {
+          "name": "Larry Allen Hicks",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "magistrate"
+          }
+        },
+        {
+          "name": "Zach Humphrey",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": "OkDOKZt5R7M",
+            "facebook_url": "https://www.facebook.com/reel/996418249616668",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 2:30 PM (Marathon)",
+            "registered": true,
+            "matched_race_slug": "magistrate"
+          }
+        },
+        {
+          "name": "Robin L. Geary",
+          "party": "R",
+          "ballot_position": 3,
+          "interview": {
+            "youtube_id": "gvZsDIj-gvI",
+            "facebook_url": "https://www.facebook.com/reel/3318220108357500",
+            "youtube_live_url": "https://www.youtube.com/watch?v=N2q1JsD9Qnc",
+            "interview_time": "Mon, April 27 · 2:45 PM",
+            "registered": true,
+            "matched_race_slug": "magistrate"
+          }
+        }
+      ],
+      "race_name_raw": "MAGISTRATE / 7th Magisterial District",
+      "category": "Local · County",
+      "sort_category": 20,
+      "sort_office": 7
+    },
+    {
+      "race_slug": "magistrate-8",
+      "race_name": "Magistrate, District 8",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "magistrate.html",
+      "race_anchor": "d8",
+      "what_at_stake": "Four-year term on Hardin County Fiscal Court.",
+      "scope": {
+        "precinct_codes": [
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "RINEYVILLE NORTH, RINEYVILLE WEST, VINE GROVE EAST, VINE GROVE WEST, VINE GROVE SOUTH and YATES"
+      },
+      "candidates": [
+        {
+          "name": "Kenny Muse",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": null,
+            "facebook_url": null,
+            "youtube_live_url": null,
+            "interview_time": null,
+            "registered": false,
+            "matched_race_slug": "magistrate"
+          }
+        },
+        {
+          "name": "Jonathan \"Jon\" Breeding",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": "iekS0G0WaPY",
+            "facebook_url": "https://www.facebook.com/reel/1243691360878382",
+            "youtube_live_url": "https://www.youtube.com/watch?v=B3w36lc5R4U",
+            "interview_time": "Mon, April 27 · 6:15 PM",
+            "registered": true,
+            "matched_race_slug": "magistrate"
+          }
+        }
+      ],
+      "race_name_raw": "MAGISTRATE / 8th Magisterial District",
+      "category": "Local · County",
+      "sort_category": 20,
+      "sort_office": 8
+    },
+    {
+      "race_slug": "constable-4",
+      "race_name": "Constable, District 4",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "",
+      "race_anchor": "",
+      "what_at_stake": "Four-year term. Constables serve civil court papers and have limited law-enforcement authority. Hardin Local did not interview these candidates.",
+      "scope": {
+        "precinct_codes": [
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "MANTLE, FREEMAN, OAKLAWN, PINE VALLEY, HELMWOOD HEIGHTS and HELM"
+      },
+      "candidates": [
+        {
+          "name": "Brandon K. Curry",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": null
+        },
+        {
+          "name": "Gerry Perkins",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": null
+        }
+      ],
+      "race_name_raw": "CONSTABLE / 4th Magisterial District",
+      "category": "Local · County",
+      "sort_category": 20,
+      "sort_office": 9
+    },
+    {
+      "race_slug": "sheriff",
+      "race_name": "Hardin County Sheriff",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "sheriff.html",
+      "race_anchor": "",
+      "what_at_stake": "Four-year term. The Sheriff is one of the county's elected law-enforcement officers — patrol, civil-process service, and court security. (The county jail is run separately by the Jailer's office.)",
+      "scope": {
+        "precinct_codes": [
+          "A001",
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "A009",
+          "A010",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006",
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005",
+          "C006",
+          "C007",
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006",
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "E005",
+          "E006",
+          "E007",
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "raw": "ALL PRECINCTS"
+      },
+      "candidates": [
+        {
+          "name": "Willie Oden",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": "YHmaRveOVs4",
+            "facebook_url": "https://www.facebook.com/reel/1668646924387386",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 3:00 PM (Election Marathon)",
+            "registered": true,
+            "matched_race_slug": "sheriff"
+          }
+        },
+        {
+          "name": "Brian C. Sankey",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": "v0MfpXyZHIE",
+            "facebook_url": "https://www.facebook.com/reel/1180431710779367",
+            "youtube_live_url": "https://www.youtube.com/watch?v=aYRbf1Hrz5Y",
+            "interview_time": "Mon, April 27 · 4:00 PM",
+            "registered": true,
+            "matched_race_slug": "sheriff"
+          }
+        }
+      ],
+      "race_name_raw": "SHERIFF",
+      "category": "Local · County",
+      "sort_category": 20,
+      "sort_office": 10
+    },
+    {
+      "race_slug": "pva",
+      "race_name": "Property Valuation Administrator",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "pva.html",
+      "race_anchor": "",
+      "what_at_stake": "Four-year term. The PVA decides what your house and car are worth for tax purposes.",
+      "scope": {
+        "precinct_codes": [
+          "A001",
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "A009",
+          "A010",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006",
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005",
+          "C006",
+          "C007",
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006",
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "E005",
+          "E006",
+          "E007",
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "raw": "ALL PRECINCTS"
+      },
+      "candidates": [
+        {
+          "name": "Michelle Pirtle Bowen",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": "RoyiErrGyu8",
+            "facebook_url": "https://www.facebook.com/reel/1316630300393836",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 4:00 PM (Election Marathon)",
+            "registered": true,
+            "matched_race_slug": "pva"
+          }
+        },
+        {
+          "name": "Dennis Davis",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": "C77Z50aXzIs",
+            "facebook_url": "https://www.facebook.com/reel/974371441650197",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 5:30 PM (Election Marathon)",
+            "registered": true,
+            "matched_race_slug": "pva"
+          }
+        },
+        {
+          "name": "Casey Overstreet",
+          "party": "R",
+          "ballot_position": 3,
+          "interview": {
+            "youtube_id": "LDppkSoZ2Hk",
+            "facebook_url": "https://www.facebook.com/reel/2746057482573300",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 5:00 PM (Election Marathon)",
+            "registered": true,
+            "matched_race_slug": "pva"
+          }
+        }
+      ],
+      "race_name_raw": "PROPERTY VALUATION ADMINISTRATOR",
+      "category": "Local · County",
+      "sort_category": 20,
+      "sort_office": 11
+    },
+    {
+      "race_slug": "ky-house-10",
+      "race_name": "Kentucky State Representative — 10th District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "state-federal.html",
+      "race_anchor": "",
+      "what_at_stake": "Two-year term in the Kentucky House. HD-10 covers western Hardin County, Vine Grove, Cecilia, and surrounding precincts.",
+      "scope": {
+        "precinct_codes": [
+          "A007",
+          "D005",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "VETERANS, HELMWOOD HEIGHTS, PATRIOT, CECILIA, ST. JOHN, HOWEVALLEY, RINEYVILLE SOUTH, RINEYVILLE NORTH, RINEYVILLE WEST, VINE GROVE EAST, VINE GROVE WEST, VINE GROVE SOUTH and YATES"
+      },
+      "candidates": [
+        {
+          "name": "Josh Calloway",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": {
+            "youtube_id": "xW0VcgPBEXE",
+            "facebook_url": "https://www.facebook.com/reel/1256235649928446",
+            "youtube_live_url": "https://www.youtube.com/watch?v=34gXM2__YsM",
+            "interview_time": "Tue, May 5 · 4:00 PM",
+            "registered": true,
+            "matched_race_slug": "state-federal"
+          }
+        },
+        {
+          "name": "Julie Cantwell",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": "4wiEupWewg8",
+            "facebook_url": "https://www.facebook.com/reel/1579772836450116",
+            "youtube_live_url": "https://www.youtube.com/watch?v=BXDXY0QYCaw",
+            "interview_time": "Mon, April 27 · 5:45 PM",
+            "registered": true,
+            "matched_race_slug": "state-federal"
+          }
+        }
+      ],
+      "race_name_raw": "STATE REPRESENTATIVE / 10th Representative District",
+      "category": "State",
+      "sort_category": 30,
+      "sort_office": 1
+    },
+    {
+      "race_slug": "ky-house-27",
+      "race_name": "Kentucky State Representative — 27th District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "state-federal.html",
+      "race_anchor": "",
+      "what_at_stake": "Two-year term in the Kentucky House. HD-27 covers most of Radcliff, Fort Knox 27, and a few neighboring precincts.",
+      "scope": {
+        "precinct_codes": [
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A008",
+          "A010",
+          "B001",
+          "B006"
+        ],
+        "has_partial": false,
+        "partial_codes": [],
+        "raw": "RADCLIFF EAST, RADCLIFF NORTH, RADCLIFF NORTHWEST, RADCLIFF WEST, RED HILL, RADCLIFF SOUTHWEST, FORT KNOX 27, RADCLIFF SOUTH and PARKWAY"
+      },
+      "candidates": [
+        {
+          "name": "Paul Smith",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": null
+        },
+        {
+          "name": "Joseph Redmon",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": {
+            "youtube_id": "8pUsLP2I0Kw",
+            "facebook_url": "https://www.facebook.com/share/v/1B3dAWou8S/",
+            "youtube_live_url": "https://www.youtube.com/watch?v=gBKhyWtH804",
+            "interview_time": "Fri, April 24 · 11:30 AM",
+            "registered": true,
+            "matched_race_slug": "state-federal"
+          }
+        },
+        {
+          "name": "Sandra Carter",
+          "party": "R",
+          "ballot_position": 3,
+          "interview": null
+        },
+        {
+          "name": "Rachelle Frazier",
+          "party": "R",
+          "ballot_position": 4,
+          "interview": {
+            "youtube_id": "Vu0e-SwFAOQ",
+            "facebook_url": "https://www.facebook.com/HardinLocal/videos/1363800112249130",
+            "youtube_live_url": "https://www.youtube.com/watch?v=Gpj5NfLtmnk",
+            "interview_time": "Thu, May 7 · 12:00 PM ET",
+            "registered": true,
+            "matched_race_slug": "state-federal"
+          }
+        }
+      ],
+      "race_name_raw": "STATE REPRESENTATIVE / 27th Representative District",
+      "category": "State",
+      "sort_category": 30,
+      "sort_office": 2
+    },
+    {
+      "race_slug": "ky-senate-10",
+      "race_name": "Kentucky State Senator — 10th District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "state-federal.html",
+      "race_anchor": "",
+      "what_at_stake": "Four-year term in the Kentucky Senate. SD-10 covers all of Hardin County.",
+      "scope": {
+        "precinct_codes": [
+          "A001",
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "A009",
+          "A010",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006",
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005",
+          "C006",
+          "C007",
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006",
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "E005",
+          "E006",
+          "E007",
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "raw": "ALL PRECINCTS"
+      },
+      "candidates": [
+        {
+          "name": "Matt Deneen",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": null
+        },
+        {
+          "name": "Louis Grider",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": null
+        }
+      ],
+      "race_name_raw": "STATE SENATOR / 10th Senatorial District",
+      "category": "State",
+      "sort_category": 30,
+      "sort_office": 3
+    },
+    {
+      "race_slug": "us-house-ky2",
+      "race_name": "U.S. Representative — Kentucky 2nd District",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "state-federal.html",
+      "race_anchor": "",
+      "what_at_stake": "Two-year term in the U.S. House. Hardin County is in Kentucky's 2nd Congressional District.",
+      "scope": {
+        "precinct_codes": [
+          "A001",
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "A009",
+          "A010",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006",
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005",
+          "C006",
+          "C007",
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006",
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "E005",
+          "E006",
+          "E007",
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "raw": "ALL PRECINCTS"
+      },
+      "candidates": [
+        {
+          "name": "G. \"Shay\" Perry-Adelmann",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": null
+        },
+        {
+          "name": "S. Brett Guthrie",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": null
+        },
+        {
+          "name": "Joshua M. Ferguson",
+          "party": "R",
+          "ballot_position": 3,
+          "interview": null
+        }
+      ],
+      "race_name_raw": "UNITED STATES REPRESENTATIVE / in CONGRESS / 2nd Congressional District",
+      "category": "Federal",
+      "sort_category": 40,
+      "sort_office": 1
+    },
+    {
+      "race_slug": "us-house-ky2",
+      "race_name": "U.S. Representative — Kentucky 2nd District",
+      "party": "D",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "state-federal.html",
+      "race_anchor": "",
+      "what_at_stake": "Two-year term in the U.S. House.",
+      "scope": {
+        "precinct_codes": [
+          "A001",
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "A009",
+          "A010",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006",
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005",
+          "C006",
+          "C007",
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006",
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "E005",
+          "E006",
+          "E007",
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "raw": "ALL PRECINCTS"
+      },
+      "candidates": [
+        {
+          "name": "David S. Hatfield",
+          "party": "D",
+          "ballot_position": 1,
+          "interview": null
+        },
+        {
+          "name": "Megan Wingfield",
+          "party": "D",
+          "ballot_position": 2,
+          "interview": null
+        },
+        {
+          "name": "Hank Linderman",
+          "party": "D",
+          "ballot_position": 3,
+          "interview": null
+        },
+        {
+          "name": "William Dakota Compton",
+          "party": "D",
+          "ballot_position": 4,
+          "interview": null
+        }
+      ],
+      "race_name_raw": "UNITED STATES REPRESENTATIVE / in CONGRESS / 2nd Congressional District",
+      "category": "Federal",
+      "sort_category": 40,
+      "sort_office": 1
+    },
+    {
+      "race_slug": "us-senate",
+      "race_name": "U.S. Senator (Kentucky)",
+      "party": "R",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "state-federal.html",
+      "race_anchor": "",
+      "what_at_stake": "Six-year term in the U.S. Senate. Votes on federal laws, judicial confirmations, and treaties.",
+      "scope": {
+        "precinct_codes": [
+          "A001",
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "A009",
+          "A010",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006",
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005",
+          "C006",
+          "C007",
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006",
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "E005",
+          "E006",
+          "E007",
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "raw": "ALL PRECINCTS"
+      },
+      "candidates": [
+        {
+          "name": "Anissa Catlett",
+          "party": "R",
+          "ballot_position": 1,
+          "interview": null
+        },
+        {
+          "name": "A. Nick Shelley",
+          "party": "R",
+          "ballot_position": 2,
+          "interview": null
+        },
+        {
+          "name": "Valerie \"Dr Val\" Fredrick",
+          "party": "R",
+          "ballot_position": 3,
+          "interview": null
+        },
+        {
+          "name": "Michael James Faris",
+          "party": "R",
+          "ballot_position": 4,
+          "interview": {
+            "youtube_id": "493WoPLrrVM",
+            "facebook_url": "https://www.facebook.com/reel/1897629410845673",
+            "youtube_live_url": "https://www.youtube.com/watch?v=_XFOKAdiKrc",
+            "interview_time": "Wed, April 29 · 1:00 PM (Marathon kickoff)",
+            "registered": true,
+            "matched_race_slug": "state-federal"
+          }
+        },
+        {
+          "name": "Nate Morris",
+          "party": "R",
+          "ballot_position": 5,
+          "interview": null
+        },
+        {
+          "name": "Donald Wenzel",
+          "party": "R",
+          "ballot_position": 6,
+          "interview": null
+        },
+        {
+          "name": "Jonathan M. Holliday",
+          "party": "R",
+          "ballot_position": 7,
+          "interview": null
+        },
+        {
+          "name": "George Washington",
+          "party": "R",
+          "ballot_position": 8,
+          "interview": null
+        },
+        {
+          "name": "Andy Barr",
+          "party": "R",
+          "ballot_position": 9,
+          "interview": null
+        },
+        {
+          "name": "Daniel Cameron",
+          "party": "R",
+          "ballot_position": 10,
+          "interview": {
+            "youtube_id": "lFwQHlOOiio",
+            "facebook_url": "https://www.facebook.com/HardinLocal/videos/1511782617191767",
+            "youtube_live_url": "https://www.youtube.com/watch?v=Bb7ZozAkgvg",
+            "interview_time": "Thu, May 7 · 7:00 PM ET",
+            "registered": true,
+            "matched_race_slug": "state-federal"
+          }
+        },
+        {
+          "name": "Jimmy I. Leon",
+          "party": "R",
+          "ballot_position": 11,
+          "interview": null
+        },
+        {
+          "name": "James D. Duncan",
+          "party": "R",
+          "ballot_position": 12,
+          "interview": null
+        }
+      ],
+      "race_name_raw": "UNITED STATES SENATOR",
+      "category": "Federal",
+      "sort_category": 40,
+      "sort_office": 2
+    },
+    {
+      "race_slug": "us-senate",
+      "race_name": "U.S. Senator (Kentucky)",
+      "party": "D",
+      "vote_for": 1,
+      "vote_for_text": "(Vote for One)",
+      "race_file": "state-federal.html",
+      "race_anchor": "",
+      "what_at_stake": "Six-year term in the U.S. Senate. Votes on federal laws, judicial confirmations, and treaties.",
+      "scope": {
+        "precinct_codes": [
+          "A001",
+          "A002",
+          "A003",
+          "A004",
+          "A005",
+          "A006",
+          "A007",
+          "A008",
+          "A009",
+          "A010",
+          "B001",
+          "B002",
+          "B003",
+          "B004",
+          "B005",
+          "B006",
+          "C001",
+          "C002",
+          "C003",
+          "C004",
+          "C005",
+          "C006",
+          "C007",
+          "D001",
+          "D002",
+          "D003",
+          "D004",
+          "D005",
+          "D006",
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "E005",
+          "E006",
+          "E007",
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "H001",
+          "H004",
+          "H005",
+          "H006",
+          "H007",
+          "H008"
+        ],
+        "has_partial": false,
+        "raw": "ALL PRECINCTS"
+      },
+      "candidates": [
+        {
+          "name": "Logan Forsythe",
+          "party": "D",
+          "ballot_position": 1,
+          "interview": null
+        },
+        {
+          "name": "Amy McGrath",
+          "party": "D",
+          "ballot_position": 2,
+          "interview": null
+        },
+        {
+          "name": "Dale Lewis Romans",
+          "party": "D",
+          "ballot_position": 3,
+          "interview": null
+        },
+        {
+          "name": "Joshua Blanton Sr.",
+          "party": "D",
+          "ballot_position": 4,
+          "interview": null
+        },
+        {
+          "name": "Vincent Anthony Thompson",
+          "party": "D",
+          "ballot_position": 5,
+          "interview": {
+            "youtube_id": "l7nJDf5XMxA",
+            "facebook_url": "https://www.facebook.com/reel/962089476739936/",
+            "youtube_live_url": "https://www.youtube.com/watch?v=XRlARPQgq1s",
+            "interview_time": "Wed, May 6 · 12:00 PM ET",
+            "registered": true,
+            "matched_race_slug": "state-federal"
+          }
+        },
+        {
+          "name": "Charles Booker",
+          "party": "D",
+          "ballot_position": 6,
+          "interview": null
+        },
+        {
+          "name": "Pamela Stevenson",
+          "party": "D",
+          "ballot_position": 7,
+          "interview": null
+        }
+      ],
+      "race_name_raw": "UNITED STATES SENATOR",
+      "category": "Federal",
+      "sort_category": 40,
+      "sort_office": 2
+    }
+  ]
+}

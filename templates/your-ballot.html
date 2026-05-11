@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{TITLE}} | Your Ballot | Hardin Local</title>
+  <meta name="description" content="Your personalized May 19, 2026 primary ballot for {{PRECINCT_NAME}} ({{PARTY_LONG}}). All races + candidates + interview videos + 15 vote centers." />
+  <meta name="theme-color" content="#0e1219" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="{{TITLE}} | Your Ballot" />
+  <meta property="og:description" content="Personalized 2026 primary ballot for {{PRECINCT_NAME}} ({{PARTY_LONG}}) — all races + candidates + interview videos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hardin Local" />
+
+  <link rel="stylesheet" href="../race-page.css" />
+  <link rel="stylesheet" href="../your-ballot.css" />
+  {{LEAFLET_CSS}}
+</head>
+<body>
+  <div class="rainbow-rule"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-name">Hardin Local</span>
+        <span class="brand-tag">Civic Coverage</span>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="header-nav collapsible" id="site-nav" aria-label="Primary">
+        <a href="../../index.html" class="nav-link">📅 This Week</a>
+        <a href="../../elections.html" class="nav-link">🗳️ Election Interviews</a>
+        <a href="../find-your-ballot.html" class="nav-link" aria-current="page">🔍 Find Your Ballot</a>
+        <a href="https://hardinlocal.com" class="nav-link">HardinLocal.com</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../elections.html">Election Interviews</a>
+      <span class="sep">›</span>
+      <a href="../find-your-ballot.html">Your Ballot</a>
+      <span class="sep">›</span>
+      <span>{{PRECINCT_NAME}} · {{PARTY_LONG}}</span>
+    </nav>
+
+    <section class="your-ballot-hero" aria-labelledby="ballot-title">
+      <p class="race-eyebrow">— Your May 19, 2026 Primary Ballot —</p>
+      <h1 id="ballot-title">{{PRECINCT_NAME}} <span class="accent">·</span> {{PARTY_LONG}}</h1>
+      <div class="race-meta">
+        <span class="pill {{PARTY_PILL_CLASS}}">{{PARTY_LONG}}</span>
+        <span class="pill">Magistrate District {{MD}}</span>
+        {{HD_PILL}}
+        <span class="pill">{{RACE_COUNT}} race{{RACE_COUNT_S}} on your ballot</span>
+      </div>
+      <p class="race-blurb">
+        {{HERO_BLURB}}
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#ballot-mockup">Jump to my races ↓</a>
+        <a class="btn-secondary" href="../find-your-ballot.html">Change my answers →</a>
+      </div>
+    </section>
+
+    {{VOTING_INFO_SNIPPET}}
+
+    <section class="vote-centers-section" aria-labelledby="vc-heading">
+      <h2 id="vc-heading">Where to vote</h2>
+      <p class="vc-tagline"><strong>15 Election-Day vote centers</strong> open 6 AM – 6 PM on May 19. Pick whichever is closest to where you'll be.</p>
+      <div id="vote-centers-map" class="vote-centers-map" aria-label="Map of the 15 Hardin County vote centers"></div>
+      <details class="vc-list-toggle" open>
+        <summary>Full list (15 locations + 2 early-voting sites)</summary>
+        <div class="vc-list-grid">
+          {{VOTE_CENTER_LIST}}
+        </div>
+      </details>
+    </section>
+
+    <section class="ballot-mockup-section" id="ballot-mockup" aria-labelledby="ballot-mockup-heading">
+      <div class="ballot-mockup-head">
+        <h2 id="ballot-mockup-heading">Your ballot</h2>
+        <p class="ballot-mockup-sub">In the order they'll appear on your May 19 ballot. Tap any race to watch the candidate interviews.</p>
+      </div>
+
+      <nav class="ballot-toc" aria-label="Races on this ballot">
+        <strong>On your ballot:</strong>
+        {{BALLOT_TOC}}
+      </nav>
+
+      <div class="ballot-races">
+        {{BALLOT_RACES}}
+      </div>
+    </section>
+
+    <section class="ballot-actions" aria-label="Page actions">
+      <a class="ballot-action ballot-action-cal" href="../hardin-2026-primary.ics" download="hardin-2026-primary.ics">📅 Add voting dates to my calendar</a>
+      <a class="ballot-action ballot-action-print" href="javascript:window.print()">🖨️ Print this page</a>
+      <a class="ballot-action ballot-action-share" href="sms:?body={{SMS_BODY}}">📲 Text this page to a friend</a>
+      <a class="ballot-action ballot-action-pdf" href="https://hccoky.org/pdf/ballots/26PComp.pdf" target="_blank" rel="noopener">📄 Official sample ballot (PDF)</a>
+    </section>
+
+    <section class="other-races" aria-labelledby="back-heading">
+      <h3 id="back-heading">Not your ballot?</h3>
+      <div class="other-races-grid">
+        <a href="../find-your-ballot.html">← Pick a different precinct or party</a>
+        <a href="../../elections.html">All race interviews</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-row">
+      <div>
+        Free, non-partisan civic coverage from
+        <span class="pill fb">Facebook</span>
+        <span class="pill yt">YouTube</span>
+      </div>
+      <div class="handle">HardinLocal.com</div>
+    </div>
+    <p class="footer-fine">
+      Hardin Local is a community-focused podcast and social media platform covering Hardin County, Kentucky. Election interviews are produced as a free, non-partisan public service. Sample ballot data is sourced from the Hardin County Clerk's official 2026 Primary Composite Sample Ballot. Polling location data is sourced from the Kentucky State Board of Elections.
+    </p>
+  </footer>
+
+  <script src="../../site-nav.js" defer></script>
+  {{LEAFLET_JS}}
+  <script>
+    // Persist user's ballot choice for return visits
+    try {
+      localStorage.setItem('hl_last_ballot', JSON.stringify({
+        precinct: '{{PRECINCT_CODE}}',
+        precinctName: '{{PRECINCT_NAME}}',
+        party: '{{PARTY_CODE}}',
+        url: location.pathname + location.search
+      }));
+    } catch(e) {}
+  </script>
+  {{MAP_INIT_JS}}
+</body>
+</html>

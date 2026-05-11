@@ -1,0 +1,189 @@
+{
+  "_meta": {
+    "source": "KY State Board of Elections polling-locations spreadsheet (updated 2026-05-08)",
+    "extracted": "2026-05-09",
+    "note": "Hardin uses vote-center model in 2026 \u2014 every Election Day location accepts ALL precincts. Early voting is at Clerk + Colvin only."
+  },
+  "election_day_2026_05_19": {
+    "hours": "6:00 AM \u2013 6:00 PM",
+    "note": "Vote-center model: ANY Hardin voter can use ANY of these locations.",
+    "locations": [
+      {
+        "title": "North Hardin High School",
+        "street": "801 S Logsdon Pkwy",
+        "city": "Radcliff",
+        "zip": 40160,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.825769544748,
+        "lng": -85.948522935364
+      },
+      {
+        "title": "Lincoln Trail Elementary School",
+        "street": "3970 Bardstown Rd",
+        "city": "Elizabethtown",
+        "zip": 42701,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.727617628419,
+        "lng": -85.802215799364
+      },
+      {
+        "title": "Creekside Elementary School",
+        "street": "151 Horseshoe Bend Rd",
+        "city": "Sonora",
+        "zip": 42776,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.523255372591,
+        "lng": -85.903443400729
+      },
+      {
+        "title": "Lakewood Elementary School",
+        "street": "265 Learning Place Ln",
+        "city": "Cecilia",
+        "zip": 42724,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.614153812815,
+        "lng": -86.016607217393
+      },
+      {
+        "title": "West Point School Building",
+        "street": "209 North 13th St",
+        "city": "West Point",
+        "zip": 40177,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.997169283739,
+        "lng": -85.955644214316
+      },
+      {
+        "title": "West 84 Fire Department",
+        "street": "21129 Sonora Hardin Springs Rd",
+        "city": "Big Clifty",
+        "zip": 42712,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.619521222097,
+        "lng": -86.187952240052
+      },
+      {
+        "title": "East Hardin Middle School",
+        "street": "810 New Glendale Rd",
+        "city": "Elizabethtown",
+        "zip": 42701,
+        "hours": "6:00AM- 6:00PM",
+        "lat": 37.671809903164,
+        "lng": -85.861127411191
+      },
+      {
+        "title": "John Hardin High School",
+        "street": "384 W.A. Jenkins Road",
+        "city": "Elizabethtown",
+        "zip": 42701,
+        "hours": "6:00AM- 6:00PM",
+        "lat": 37.75373594223,
+        "lng": -85.903732694872
+      },
+      {
+        "title": "J.T. Alton Middle School",
+        "street": "100 Country Club Road",
+        "city": "Vine Grove",
+        "zip": 40175,
+        "hours": "6:00AM- 6:00PM",
+        "lat": 37.803365247877,
+        "lng": -85.987096284874
+      },
+      {
+        "title": "Elizabethtown High School",
+        "street": "620 N Mulberry St",
+        "city": "Elizabethtown",
+        "zip": 42701,
+        "hours": "6:00AM- 6:00PM",
+        "lat": 37.701232241516,
+        "lng": -85.852372916147
+      },
+      {
+        "title": "Hardin County Clerk's Office",
+        "street": "150 N. Provident Way",
+        "city": "Elizabethtown",
+        "zip": 42701,
+        "hours": "6:00AM- 6:00PM",
+        "lat": 37.7170378,
+        "lng": -85.8999123
+      },
+      {
+        "title": "Colvin Community Center",
+        "street": "230 Freedoms Way",
+        "city": "Radcliff",
+        "zip": 40160,
+        "hours": "6:00AM- 6:00PM",
+        "lat": 37.838498062785,
+        "lng": -85.944989324418
+      },
+      {
+        "title": "Heartland Elementary School",
+        "street": "2300 Nelson Dr",
+        "city": "Elizabethtown",
+        "zip": 42701,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.7353231,
+        "lng": -85.85377
+      },
+      {
+        "title": "Cecilia Valley Elementary School",
+        "street": "931 E Main St",
+        "city": "Cecilia",
+        "zip": 42724,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.659215572157,
+        "lng": -85.948823950688
+      },
+      {
+        "title": "Glendale Christian Church",
+        "street": "119 E Main St",
+        "city": "Glendale",
+        "zip": 42740,
+        "hours": "6:00AM - 6:00PM",
+        "lat": 37.601270656284,
+        "lng": -85.907740145282
+      }
+    ]
+  },
+  "early_voting_no_excuse_2026_05_14_to_16": {
+    "hours": "8:00 AM \u2013 4:30 PM",
+    "dates": "Thu May 14, Fri May 15, Sat May 16",
+    "note": "No reason needed. Open to all Hardin voters.",
+    "locations": [
+      {
+        "title": "Hardin County Clerk's Office",
+        "street": "150 N Provident Way Ste 103",
+        "city": "Elizabethtown",
+        "zip": 42701,
+        "hours": "8 AM - 4:30 PM",
+        "lat": 37.7170378,
+        "lng": -85.8999123
+      },
+      {
+        "title": "Colvin Community Center",
+        "street": "230 Freedoms Way",
+        "city": "Radcliff",
+        "zip": 40160,
+        "hours": "8 AM - 4:30 PM",
+        "lat": 37.838498062785,
+        "lng": -85.944989324418
+      }
+    ]
+  },
+  "early_voting_excused_in_person_2026_05_06_to_13": {
+    "hours": "8:00 AM \u2013 4:30 PM",
+    "dates": "Wed May 6 \u2013 Tue May 13 (business days)",
+    "note": "Excused absentee only \u2014 requires a qualifying reason. Clerk's office only.",
+    "locations": [
+      {
+        "title": "Hardin County Clerk's Office",
+        "street": "150 N Provident Way Ste 103",
+        "city": "Elizabethtown",
+        "zip": 42701,
+        "hours": "8 AM - 4:30 PM",
+        "lat": 37.7170378,
+        "lng": -85.8999123
+      }
+    ]
+  }
+}

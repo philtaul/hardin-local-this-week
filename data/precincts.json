@@ -1,0 +1,599 @@
+{
+  "_meta": {
+    "source": "https://hccoky.org/20elections-Maps.asp",
+    "extracted": "2026-05-09",
+    "total_precincts": 58,
+    "fields": {
+      "code": "Precinct code (e.g. A002)",
+      "name": "Human-readable precinct name",
+      "magistrate_district": "1-8",
+      "area_group": "UI grouping for the picker \u2014 informal area/city label",
+      "state_house": "10 (contested R primary), 27 (contested R primary), or 'other' (no contested HD primary on ballot)",
+      "in_radcliff": "true if this precinct appears on the Radcliff city ballot per the composite (full-coverage precincts only; some addresses in 'partial' precincts also vote city races \u2014 the authoritative scope is in merged_ballot.json)",
+      "in_vine_grove": "true if this precinct appears on the Vine Grove city ballot per the composite (Vine Grove East + West only)",
+      "pdf_map_url": "Street-level precinct boundary map at clerk's site"
+    }
+  },
+  "precincts": [
+    {
+      "code": "A001",
+      "name": "West Point",
+      "magistrate_district": 1,
+      "area_group": "West Point",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A001.pdf"
+    },
+    {
+      "code": "A002",
+      "name": "Radcliff East",
+      "magistrate_district": 1,
+      "area_group": "Radcliff",
+      "state_house": "27",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A002.pdf"
+    },
+    {
+      "code": "A003",
+      "name": "Radcliff North",
+      "magistrate_district": 1,
+      "area_group": "Radcliff",
+      "state_house": "27",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A003.pdf"
+    },
+    {
+      "code": "A004",
+      "name": "Radcliff Northwest",
+      "magistrate_district": 1,
+      "area_group": "Radcliff",
+      "state_house": "27",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A004.pdf"
+    },
+    {
+      "code": "A005",
+      "name": "Radcliff West",
+      "magistrate_district": 1,
+      "area_group": "Radcliff",
+      "state_house": "27",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A005.pdf"
+    },
+    {
+      "code": "A006",
+      "name": "Red Hill",
+      "magistrate_district": 1,
+      "area_group": "Other / unincorporated north",
+      "state_house": "27",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A006.pdf"
+    },
+    {
+      "code": "A007",
+      "name": "Veterans",
+      "magistrate_district": 1,
+      "area_group": "Other / unincorporated north",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A007.pdf"
+    },
+    {
+      "code": "A008",
+      "name": "Radcliff Southwest",
+      "magistrate_district": 1,
+      "area_group": "Radcliff",
+      "state_house": "27",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A008.pdf"
+    },
+    {
+      "code": "A009",
+      "name": "Fort Knox 26",
+      "magistrate_district": 1,
+      "area_group": "Fort Knox",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A009.pdf"
+    },
+    {
+      "code": "A010",
+      "name": "Fort Knox 27",
+      "magistrate_district": 1,
+      "area_group": "Fort Knox",
+      "state_house": "27",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/A010.pdf"
+    },
+    {
+      "code": "B001",
+      "name": "Radcliff South",
+      "magistrate_district": 2,
+      "area_group": "Radcliff",
+      "state_house": "27",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/B001.pdf"
+    },
+    {
+      "code": "B002",
+      "name": "Radcliff Southeast",
+      "magistrate_district": 2,
+      "area_group": "Radcliff",
+      "state_house": "other",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/B002.pdf"
+    },
+    {
+      "code": "B003",
+      "name": "Shelton",
+      "magistrate_district": 2,
+      "area_group": "Other / unincorporated north",
+      "state_house": "other",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/B003.pdf"
+    },
+    {
+      "code": "B004",
+      "name": "Woodland",
+      "magistrate_district": 2,
+      "area_group": "Other / unincorporated north",
+      "state_house": "other",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/B004.pdf"
+    },
+    {
+      "code": "B005",
+      "name": "Longview",
+      "magistrate_district": 2,
+      "area_group": "Other / unincorporated north",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/B005.pdf"
+    },
+    {
+      "code": "B006",
+      "name": "Parkway",
+      "magistrate_district": 2,
+      "area_group": "Radcliff",
+      "state_house": "27",
+      "in_radcliff": true,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/B006.pdf"
+    },
+    {
+      "code": "C001",
+      "name": "Highlands",
+      "magistrate_district": 3,
+      "area_group": "Other / unincorporated north",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/C001.pdf"
+    },
+    {
+      "code": "C002",
+      "name": "City Park",
+      "magistrate_district": 3,
+      "area_group": "Other / unincorporated north",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/C002.pdf"
+    },
+    {
+      "code": "C003",
+      "name": "Colesburg",
+      "magistrate_district": 3,
+      "area_group": "Other / unincorporated north",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/C003.pdf"
+    },
+    {
+      "code": "C004",
+      "name": "Tunnel Hill",
+      "magistrate_district": 3,
+      "area_group": "Other / unincorporated north",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/C004.pdf"
+    },
+    {
+      "code": "C005",
+      "name": "Lincoln Trail North",
+      "magistrate_district": 3,
+      "area_group": "Other / unincorporated",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/C005.pdf"
+    },
+    {
+      "code": "C006",
+      "name": "Lincoln Trail South",
+      "magistrate_district": 3,
+      "area_group": "Other / unincorporated",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/C006.pdf"
+    },
+    {
+      "code": "C007",
+      "name": "Etown East",
+      "magistrate_district": 3,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/C007.pdf"
+    },
+    {
+      "code": "D001",
+      "name": "Mantle",
+      "magistrate_district": 4,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/D001.pdf"
+    },
+    {
+      "code": "D002",
+      "name": "Freeman",
+      "magistrate_district": 4,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/D002.pdf"
+    },
+    {
+      "code": "D003",
+      "name": "Oaklawn",
+      "magistrate_district": 4,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/D003.pdf"
+    },
+    {
+      "code": "D004",
+      "name": "Pine Valley",
+      "magistrate_district": 4,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/D004.pdf"
+    },
+    {
+      "code": "D005",
+      "name": "Helmwood Heights",
+      "magistrate_district": 4,
+      "area_group": "Elizabethtown",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/D005.pdf"
+    },
+    {
+      "code": "D006",
+      "name": "Helm",
+      "magistrate_district": 4,
+      "area_group": "Other / unincorporated south",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/D006.pdf"
+    },
+    {
+      "code": "E001",
+      "name": "Central",
+      "magistrate_district": 5,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/E001.pdf"
+    },
+    {
+      "code": "E002",
+      "name": "Etown North",
+      "magistrate_district": 5,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/E002.pdf"
+    },
+    {
+      "code": "E003",
+      "name": "Etown West",
+      "magistrate_district": 5,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/E003.pdf"
+    },
+    {
+      "code": "E004",
+      "name": "Valley Creek",
+      "magistrate_district": 5,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/E004.pdf"
+    },
+    {
+      "code": "E005",
+      "name": "Memorial",
+      "magistrate_district": 5,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/E005.pdf"
+    },
+    {
+      "code": "E006",
+      "name": "Vanmeter City",
+      "magistrate_district": 5,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/E006.pdf"
+    },
+    {
+      "code": "E007",
+      "name": "Haycraft",
+      "magistrate_district": 5,
+      "area_group": "Elizabethtown",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/E007.pdf"
+    },
+    {
+      "code": "F001",
+      "name": "Vanmeter",
+      "magistrate_district": 6,
+      "area_group": "Other / unincorporated south",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/F001.pdf"
+    },
+    {
+      "code": "F002",
+      "name": "Chelf",
+      "magistrate_district": 6,
+      "area_group": "Other / unincorporated south",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/F002.pdf"
+    },
+    {
+      "code": "F003",
+      "name": "Country Club",
+      "magistrate_district": 6,
+      "area_group": "Other / unincorporated south",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/F003.pdf"
+    },
+    {
+      "code": "F004",
+      "name": "Glendale",
+      "magistrate_district": 6,
+      "area_group": "Glendale",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/F004.pdf"
+    },
+    {
+      "code": "F005",
+      "name": "South Dixie",
+      "magistrate_district": 6,
+      "area_group": "Other / unincorporated south",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/F005.pdf"
+    },
+    {
+      "code": "F006",
+      "name": "Sonora",
+      "magistrate_district": 6,
+      "area_group": "Sonora",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/F006.pdf"
+    },
+    {
+      "code": "F007",
+      "name": "Upton",
+      "magistrate_district": 6,
+      "area_group": "Upton",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/F007.pdf"
+    },
+    {
+      "code": "G001",
+      "name": "Eastview",
+      "magistrate_district": 7,
+      "area_group": "Other / unincorporated west",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G001.pdf"
+    },
+    {
+      "code": "G002",
+      "name": "Stephensburg",
+      "magistrate_district": 7,
+      "area_group": "Other / unincorporated west",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G002.pdf"
+    },
+    {
+      "code": "G003",
+      "name": "Meeting Creek",
+      "magistrate_district": 7,
+      "area_group": "Other / unincorporated west",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G003.pdf"
+    },
+    {
+      "code": "G004",
+      "name": "White Mills",
+      "magistrate_district": 7,
+      "area_group": "Other / unincorporated west",
+      "state_house": "other",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G004.pdf"
+    },
+    {
+      "code": "G005",
+      "name": "Patriot",
+      "magistrate_district": 7,
+      "area_group": "Other / unincorporated west",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G005.pdf"
+    },
+    {
+      "code": "G006",
+      "name": "Cecilia",
+      "magistrate_district": 7,
+      "area_group": "Cecilia",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G006.pdf"
+    },
+    {
+      "code": "G007",
+      "name": "St. John",
+      "magistrate_district": 7,
+      "area_group": "Other / unincorporated west",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G007.pdf"
+    },
+    {
+      "code": "G008",
+      "name": "Howevalley",
+      "magistrate_district": 7,
+      "area_group": "Other / unincorporated west",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G008.pdf"
+    },
+    {
+      "code": "G009",
+      "name": "Rineyville South",
+      "magistrate_district": 7,
+      "area_group": "Rineyville",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/G009.pdf"
+    },
+    {
+      "code": "H001",
+      "name": "Rineyville North",
+      "magistrate_district": 8,
+      "area_group": "Rineyville",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/H001.pdf"
+    },
+    {
+      "code": "H004",
+      "name": "Rineyville West",
+      "magistrate_district": 8,
+      "area_group": "Rineyville",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/H004.pdf"
+    },
+    {
+      "code": "H005",
+      "name": "Vine Grove East",
+      "magistrate_district": 8,
+      "area_group": "Vine Grove",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": true,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/H005.pdf"
+    },
+    {
+      "code": "H006",
+      "name": "Vine Grove West",
+      "magistrate_district": 8,
+      "area_group": "Vine Grove",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": true,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/H006.pdf"
+    },
+    {
+      "code": "H007",
+      "name": "Vine Grove South",
+      "magistrate_district": 8,
+      "area_group": "Vine Grove",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/H007.pdf"
+    },
+    {
+      "code": "H008",
+      "name": "Yates",
+      "magistrate_district": 8,
+      "area_group": "Other / unincorporated west",
+      "state_house": "10",
+      "in_radcliff": false,
+      "in_vine_grove": false,
+      "pdf_map_url": "https://hccoky.org/pdf/pmaps/H008.pdf"
+    }
+  ]
+}

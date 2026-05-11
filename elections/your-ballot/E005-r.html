@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Memorial · Republican | Your Ballot | Hardin Local</title>
+  <meta name="description" content="Your personalized May 19, 2026 primary ballot for Memorial (Republican). All races + candidates + interview videos + 15 vote centers." />
+  <meta name="theme-color" content="#0e1219" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Memorial · Republican | Your Ballot" />
+  <meta property="og:description" content="Personalized 2026 primary ballot for Memorial (Republican) — all races + candidates + interview videos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hardin Local" />
+
+  <link rel="stylesheet" href="../race-page.css" />
+  <link rel="stylesheet" href="../your-ballot.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body>
+  <div class="rainbow-rule"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-name">Hardin Local</span>
+        <span class="brand-tag">Civic Coverage</span>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="header-nav collapsible" id="site-nav" aria-label="Primary">
+        <a href="../../index.html" class="nav-link">📅 This Week</a>
+        <a href="../../elections.html" class="nav-link">🗳️ Election Interviews</a>
+        <a href="../find-your-ballot.html" class="nav-link" aria-current="page">🔍 Find Your Ballot</a>
+        <a href="https://hardinlocal.com" class="nav-link">HardinLocal.com</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../elections.html">Election Interviews</a>
+      <span class="sep">›</span>
+      <a href="../find-your-ballot.html">Your Ballot</a>
+      <span class="sep">›</span>
+      <span>Memorial · Republican</span>
+    </nav>
+
+    <section class="your-ballot-hero" aria-labelledby="ballot-title">
+      <p class="race-eyebrow">— Your May 19, 2026 Primary Ballot —</p>
+      <h1 id="ballot-title">Memorial <span class="accent">·</span> Republican</h1>
+      <div class="race-meta">
+        <span class="pill r">Republican</span>
+        <span class="pill">Magistrate District 5</span>
+        
+        <span class="pill">6 races on your ballot</span>
+      </div>
+      <p class="race-blurb">
+        These are every race + candidate on your Republican primary ballot in Memorial on Tuesday, May 19, 2026. Where Hardin Local interviewed the candidate, the video is embedded inline.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#ballot-mockup">Jump to my races ↓</a>
+        <a class="btn-secondary" href="../find-your-ballot.html">Change my answers →</a>
+      </div>
+    </section>
+
+    <section class="voting-info-card" aria-labelledby="voting-info-heading">
+  <h2 id="voting-info-heading">When + how to vote</h2>
+
+  <div class="vi-grid">
+
+    <div class="vi-block">
+      <div class="vi-eyebrow">Election Day</div>
+      <div class="vi-headline">Tuesday, May 19, 2026</div>
+      <div class="vi-detail">6:00 AM – 6:00 PM</div>
+      <div class="vi-note">Hardin uses a vote-center model: <strong>any registered voter can use any of the 15 locations</strong> below.</div>
+    </div>
+
+    <div class="vi-block">
+      <div class="vi-eyebrow">Early voting (no excuse)</div>
+      <div class="vi-headline">Thu May 14 · Fri May 15 · Sat May 16</div>
+      <div class="vi-detail">8:00 AM – 4:30 PM</div>
+      <div class="vi-note">Two locations only: <strong>Hardin County Clerk's Office</strong> (E-town) + <strong>Colvin Community Center</strong> (Radcliff). No reason needed.</div>
+    </div>
+
+    <div class="vi-block">
+      <div class="vi-eyebrow">Excused early in-person</div>
+      <div class="vi-headline">May 6 – 13 (business days)</div>
+      <div class="vi-detail">8:00 AM – 4:30 PM</div>
+      <div class="vi-note">Clerk's office only. Requires a qualifying reason (work, military, medical, etc.).</div>
+    </div>
+
+    <div class="vi-block vi-warn">
+      <div class="vi-eyebrow">Mail-in absentee — closed</div>
+      <div class="vi-headline">Request portal closed May 5</div>
+      <div class="vi-note">Already-mailed ballots must be returned by 6:00 PM 5/19. If you didn't request one, vote in person.</div>
+    </div>
+
+  </div>
+
+  <div class="vi-row vi-row-actions">
+    <a class="vi-action" href="https://vrsws.sos.ky.gov/VIC/" target="_blank" rel="noopener">
+      <span class="vi-action-icon">🗳️</span>
+      <span class="vi-action-text">
+        <strong>Am I registered?</strong>
+        <span>Check your status at the KY Voter Information Center</span>
+      </span>
+    </a>
+    <a class="vi-action" href="https://hccoky.org/pdf/ballots/26PComp.pdf" target="_blank" rel="noopener">
+      <span class="vi-action-icon">📄</span>
+      <span class="vi-action-text">
+        <strong>Official sample ballot</strong>
+        <span>2026 primary composite (PDF, all races county-wide)</span>
+      </span>
+    </a>
+  </div>
+
+  <details class="vi-details">
+    <summary>What to bring + closed-primary rules</summary>
+    <ul>
+      <li><strong>Photo ID</strong> — Kentucky driver's license, KY photo ID, U.S. passport, military ID, or a few other government-issued options. If you don't have one, you can sign an affirmation at the polls.</li>
+      <li><strong>Closed primary</strong> — Kentucky only lets you vote in your registered party's primary. Independents and "no party" voters get a ballot with nonpartisan races only (city races, school board) on May 19. Voter registration closed April 20, 2026.</li>
+      <li><strong>Help available</strong> — every polling place is required to provide accessibility assistance and language help if you ask.</li>
+    </ul>
+  </details>
+</section>
+
+
+    <section class="vote-centers-section" aria-labelledby="vc-heading">
+      <h2 id="vc-heading">Where to vote</h2>
+      <p class="vc-tagline"><strong>15 Election-Day vote centers</strong> open 6 AM – 6 PM on May 19. Pick whichever is closest to where you'll be.</p>
+      <div id="vote-centers-map" class="vote-centers-map" aria-label="Map of the 15 Hardin County vote centers"></div>
+      <details class="vc-list-toggle" open>
+        <summary>Full list (15 locations + 2 early-voting sites)</summary>
+        <div class="vc-list-grid">
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">North Hardin High School</div>
+            <div class="vc-card-addr">801 S Logsdon Pkwy, Radcliff 40160</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.825769544748,-85.948522935364" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Lincoln Trail Elementary School</div>
+            <div class="vc-card-addr">3970 Bardstown Rd, Elizabethtown 42701</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.727617628419,-85.802215799364" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Creekside Elementary School</div>
+            <div class="vc-card-addr">151 Horseshoe Bend Rd, Sonora 42776</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.523255372591,-85.903443400729" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Lakewood Elementary School</div>
+            <div class="vc-card-addr">265 Learning Place Ln, Cecilia 42724</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.614153812815,-86.016607217393" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">West Point School Building</div>
+            <div class="vc-card-addr">209 North 13th St, West Point 40177</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.997169283739,-85.955644214316" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">West 84 Fire Department</div>
+            <div class="vc-card-addr">21129 Sonora Hardin Springs Rd, Big Clifty 42712</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.619521222097,-86.187952240052" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">East Hardin Middle School</div>
+            <div class="vc-card-addr">810 New Glendale Rd, Elizabethtown 42701</div>
+            <div class="vc-card-hours">6:00AM- 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.671809903164,-85.861127411191" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">John Hardin High School</div>
+            <div class="vc-card-addr">384 W.A. Jenkins Road, Elizabethtown 42701</div>
+            <div class="vc-card-hours">6:00AM- 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.75373594223,-85.903732694872" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">J.T. Alton Middle School</div>
+            <div class="vc-card-addr">100 Country Club Road, Vine Grove 40175</div>
+            <div class="vc-card-hours">6:00AM- 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.803365247877,-85.987096284874" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Elizabethtown High School</div>
+            <div class="vc-card-addr">620 N Mulberry St, Elizabethtown 42701</div>
+            <div class="vc-card-hours">6:00AM- 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.701232241516,-85.852372916147" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Hardin County Clerk's Office</div>
+            <div class="vc-card-addr">150 N. Provident Way, Elizabethtown 42701</div>
+            <div class="vc-card-hours">6:00AM- 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.7170378,-85.8999123" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Colvin Community Center</div>
+            <div class="vc-card-addr">230 Freedoms Way, Radcliff 40160</div>
+            <div class="vc-card-hours">6:00AM- 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.838498062785,-85.944989324418" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Heartland Elementary School</div>
+            <div class="vc-card-addr">2300 Nelson Dr, Elizabethtown 42701</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.7353231,-85.85377" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Cecilia Valley Elementary School</div>
+            <div class="vc-card-addr">931 E Main St, Cecilia 42724</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.659215572157,-85.948823950688" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-eday">
+            <div class="vc-card-title">Glendale Christian Church</div>
+            <div class="vc-card-addr">119 E Main St, Glendale 42740</div>
+            <div class="vc-card-hours">6:00AM - 6:00PM · Election Day</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.601270656284,-85.907740145282" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-divider">— Early voting (May 14–16, no excuse needed) —</div>
+          <div class="vc-card vc-card-early">
+            <div class="vc-card-title">Hardin County Clerk's Office</div>
+            <div class="vc-card-addr">150 N Provident Way Ste 103, Elizabethtown 42701</div>
+            <div class="vc-card-hours">8 AM - 4:30 PM · May 14–16</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.7170378,-85.8999123" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+          <div class="vc-card vc-card-early">
+            <div class="vc-card-title">Colvin Community Center</div>
+            <div class="vc-card-addr">230 Freedoms Way, Radcliff 40160</div>
+            <div class="vc-card-hours">8 AM - 4:30 PM · May 14–16</div>
+            <a class="vc-card-link" href="https://www.google.com/maps/search/?api=1&query=37.838498062785,-85.944989324418" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="ballot-mockup-section" id="ballot-mockup" aria-labelledby="ballot-mockup-heading">
+      <div class="ballot-mockup-head">
+        <h2 id="ballot-mockup-heading">Your ballot</h2>
+        <p class="ballot-mockup-sub">In the order they'll appear on your May 19 ballot. Tap any race to watch the candidate interviews.</p>
+      </div>
+
+      <nav class="ballot-toc" aria-label="Races on this ballot">
+        <strong>On your ballot:</strong>
+        <a href="#race-magistrate-5">1. Magistrate, District 5</a> · <a href="#race-sheriff">2. Hardin County Sheriff</a> · <a href="#race-pva">3. Property Valuation Administrator</a> · <a href="#race-ky-senate-10">4. Kentucky State Senator — 10th District</a> · <a href="#race-us-house-ky2">5. U.S. Representative — Kentucky 2nd District</a> · <a href="#race-us-senate">6. U.S. Senator (Kentucky)</a>
+      </nav>
+
+      <div class="ballot-races">
+                <section class="ballot-race" id="race-magistrate-5">
+          <header class="ballot-race-head">
+            <span class="ballot-race-num">#1</span>
+            <div class="ballot-race-title-block">
+              <div class="ballot-race-label">R Primary · Vote for one</div>
+              <h3 class="ballot-race-name">Magistrate, District 5</h3>
+            </div>
+          </header>
+          <div class="ballot-race-blurb">Four-year term on Hardin County Fiscal Court.</div>
+          
+          <div class="ballot-race-candidates">
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Wayne M. Ray</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 1</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-register">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Did not register for the free Hardin Local primary interview.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Aaron Pennington</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 2</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-register">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Did not register for the free Hardin Local primary interview.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+          </div>
+          <div class="ballot-race-foot"><a class="ballot-race-deeplink" href="../magistrate.html#d5">Watch Hardin Local interviews on the Magistrate, District 5 page →</a></div>
+        </section>
+        <section class="ballot-race" id="race-sheriff">
+          <header class="ballot-race-head">
+            <span class="ballot-race-num">#2</span>
+            <div class="ballot-race-title-block">
+              <div class="ballot-race-label">R Primary · Vote for one</div>
+              <h3 class="ballot-race-name">Hardin County Sheriff</h3>
+            </div>
+          </header>
+          <div class="ballot-race-blurb">Four-year term. The Sheriff is one of the county's elected law-enforcement officers — patrol, civil-process service, and court security. (The county jail is run separately by the Jailer's office.)</div>
+          
+          <div class="ballot-race-candidates">
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Willie Oden</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 1</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/YHmaRveOVs4" title="Willie Oden — candidate interview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+        <div class="candidate-foot">
+        <div class="interview-time"><span class="label">Interview</span> Wed, April 29 · 3:00 PM (Election Marathon)</div>
+        <div class="note">Edited video published.</div>
+        <a class="fb-link" href="https://www.facebook.com/reel/1668646924387386" target="_blank" rel="noopener">📘 Also on Facebook →</a>
+        <a class="yt-live-link" href="https://www.youtube.com/watch?v=_XFOKAdiKrc" target="_blank" rel="noopener">📹 Raw livestream →</a>
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Brian C. Sankey</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 2</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/v0MfpXyZHIE" title="Brian C. Sankey — candidate interview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+        <div class="candidate-foot">
+        <div class="interview-time"><span class="label">Interview</span> Mon, April 27 · 4:00 PM</div>
+        <div class="note">Edited video published.</div>
+        <a class="fb-link" href="https://www.facebook.com/reel/1180431710779367" target="_blank" rel="noopener">📘 Also on Facebook →</a>
+        <a class="yt-live-link" href="https://www.youtube.com/watch?v=aYRbf1Hrz5Y" target="_blank" rel="noopener">📹 Raw livestream →</a>
+        </div>
+      </article>
+          </div>
+          <div class="ballot-race-foot"><a class="ballot-race-deeplink" href="../sheriff.html">Watch Hardin Local interviews on the Hardin County Sheriff page →</a></div>
+        </section>
+        <section class="ballot-race" id="race-pva">
+          <header class="ballot-race-head">
+            <span class="ballot-race-num">#3</span>
+            <div class="ballot-race-title-block">
+              <div class="ballot-race-label">R Primary · Vote for one</div>
+              <h3 class="ballot-race-name">Property Valuation Administrator</h3>
+            </div>
+          </header>
+          <div class="ballot-race-blurb">Four-year term. The PVA decides what your house and car are worth for tax purposes.</div>
+          
+          <div class="ballot-race-candidates">
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Michelle Pirtle Bowen</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 1</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/RoyiErrGyu8" title="Michelle Pirtle Bowen — candidate interview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+        <div class="candidate-foot">
+        <div class="interview-time"><span class="label">Interview</span> Wed, April 29 · 4:00 PM (Election Marathon)</div>
+        <div class="note">Edited video published.</div>
+        <a class="fb-link" href="https://www.facebook.com/reel/1316630300393836" target="_blank" rel="noopener">📘 Also on Facebook →</a>
+        <a class="yt-live-link" href="https://www.youtube.com/watch?v=_XFOKAdiKrc" target="_blank" rel="noopener">📹 Raw livestream →</a>
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Dennis Davis</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 2</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/C77Z50aXzIs" title="Dennis Davis — candidate interview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+        <div class="candidate-foot">
+        <div class="interview-time"><span class="label">Interview</span> Wed, April 29 · 5:30 PM (Election Marathon)</div>
+        <div class="note">Edited video published.</div>
+        <a class="fb-link" href="https://www.facebook.com/reel/974371441650197" target="_blank" rel="noopener">📘 Also on Facebook →</a>
+        <a class="yt-live-link" href="https://www.youtube.com/watch?v=_XFOKAdiKrc" target="_blank" rel="noopener">📹 Raw livestream →</a>
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Casey Overstreet</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 3</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/LDppkSoZ2Hk" title="Casey Overstreet — candidate interview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+        <div class="candidate-foot">
+        <div class="interview-time"><span class="label">Interview</span> Wed, April 29 · 5:00 PM (Election Marathon)</div>
+        <div class="note">Edited video published.</div>
+        <a class="fb-link" href="https://www.facebook.com/reel/2746057482573300" target="_blank" rel="noopener">📘 Also on Facebook →</a>
+        <a class="yt-live-link" href="https://www.youtube.com/watch?v=_XFOKAdiKrc" target="_blank" rel="noopener">📹 Raw livestream →</a>
+        </div>
+      </article>
+          </div>
+          <div class="ballot-race-foot"><a class="ballot-race-deeplink" href="../pva.html">Watch Hardin Local interviews on the Property Valuation Administrator page →</a></div>
+        </section>
+        <section class="ballot-race" id="race-ky-senate-10">
+          <header class="ballot-race-head">
+            <span class="ballot-race-num">#4</span>
+            <div class="ballot-race-title-block">
+              <div class="ballot-race-label">R Primary · Vote for one</div>
+              <h3 class="ballot-race-name">Kentucky State Senator — 10th District</h3>
+            </div>
+          </header>
+          <div class="ballot-race-blurb">Four-year term in the Kentucky Senate. SD-10 covers all of Hardin County.</div>
+          
+          <div class="ballot-race-candidates">
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Matt Deneen</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 1</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Louis Grider</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 2</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+          </div>
+          <div class="ballot-race-foot"><a class="ballot-race-deeplink" href="../state-federal.html">Watch Hardin Local interviews on the Kentucky State Senator — 10th District page →</a></div>
+        </section>
+        <section class="ballot-race" id="race-us-house-ky2">
+          <header class="ballot-race-head">
+            <span class="ballot-race-num">#5</span>
+            <div class="ballot-race-title-block">
+              <div class="ballot-race-label">R Primary · Vote for one</div>
+              <h3 class="ballot-race-name">U.S. Representative — Kentucky 2nd District</h3>
+            </div>
+          </header>
+          <div class="ballot-race-blurb">Two-year term in the U.S. House. Hardin County is in Kentucky's 2nd Congressional District.</div>
+          
+          <div class="ballot-race-candidates">
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">G. "Shay" Perry-Adelmann</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 1</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">S. Brett Guthrie</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 2</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Joshua M. Ferguson</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 3</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+          </div>
+          <div class="ballot-race-foot"><a class="ballot-race-deeplink" href="../state-federal.html">Watch Hardin Local interviews on the U.S. Representative — Kentucky 2nd District page →</a></div>
+        </section>
+        <section class="ballot-race" id="race-us-senate">
+          <header class="ballot-race-head">
+            <span class="ballot-race-num">#6</span>
+            <div class="ballot-race-title-block">
+              <div class="ballot-race-label">R Primary · Vote for one</div>
+              <h3 class="ballot-race-name">U.S. Senator (Kentucky)</h3>
+            </div>
+          </header>
+          <div class="ballot-race-blurb">Six-year term in the U.S. Senate. Votes on federal laws, judicial confirmations, and treaties.</div>
+          
+          <div class="ballot-race-candidates">
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Michael James Faris</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 4</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/493WoPLrrVM" title="Michael James Faris — candidate interview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+        <div class="candidate-foot">
+        <div class="interview-time"><span class="label">Interview</span> Wed, April 29 · 1:00 PM (Marathon kickoff)</div>
+        <div class="note">Edited video published.</div>
+        <a class="fb-link" href="https://www.facebook.com/reel/1897629410845673" target="_blank" rel="noopener">📘 Also on Facebook →</a>
+        <a class="yt-live-link" href="https://www.youtube.com/watch?v=_XFOKAdiKrc" target="_blank" rel="noopener">📹 Raw livestream →</a>
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Daniel Cameron</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 10</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <iframe src="https://www.youtube.com/embed/lFwQHlOOiio" title="Daniel Cameron — candidate interview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+        <div class="candidate-foot">
+        <div class="interview-time"><span class="label">Interview</span> Thu, May 7 · 7:00 PM ET</div>
+        <div class="note">Edited video published.</div>
+        <a class="fb-link" href="https://www.facebook.com/HardinLocal/videos/1511782617191767" target="_blank" rel="noopener">📘 Also on Facebook →</a>
+        <a class="yt-live-link" href="https://www.youtube.com/watch?v=Bb7ZozAkgvg" target="_blank" rel="noopener">📹 Raw livestream →</a>
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Anissa Catlett</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 1</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">A. Nick Shelley</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 2</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Valerie "Dr Val" Fredrick</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 3</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Nate Morris</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 5</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Donald Wenzel</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 6</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Jonathan M. Holliday</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 7</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">George Washington</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 8</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Andy Barr</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 9</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">Jimmy I. Leon</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 11</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+      <article class="candidate r">
+        <div class="candidate-head">
+          <div class="candidate-name">James D. Duncan</div>
+          <div class="candidate-meta">
+            <span class="party-pill r">R</span>
+            <span class="ballot">Ballot Position 12</span>
+          </div>
+        </div>
+        <div class="embed-wrap">
+        <div class="embed-placeholder no-interview">
+          <div class="ph-status">— No Hardin Local interview —</div>
+          <div class="ph-msg">Hardin Local does not interview every candidate in races with statewide or multi-county audiences. We focus on the local races where voter information is hardest to find.</div>
+        </div>
+      </div>
+        <div class="candidate-foot">
+        </div>
+      </article>
+          </div>
+          <div class="ballot-race-foot"><a class="ballot-race-deeplink" href="../state-federal.html">Watch Hardin Local interviews on the U.S. Senator (Kentucky) page →</a></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="ballot-actions" aria-label="Page actions">
+      <a class="ballot-action ballot-action-cal" href="../hardin-2026-primary.ics" download="hardin-2026-primary.ics">📅 Add voting dates to my calendar</a>
+      <a class="ballot-action ballot-action-print" href="javascript:window.print()">🖨️ Print this page</a>
+      <a class="ballot-action ballot-action-share" href="sms:?body=My%20Hardin%20Local%20ballot%20for%20May%2019%20(Memorial%20Republican):%20https://philtaul.github.io/hardin-local-this-week/elections/your-ballot/E005-r.html">📲 Text this page to a friend</a>
+      <a class="ballot-action ballot-action-pdf" href="https://hccoky.org/pdf/ballots/26PComp.pdf" target="_blank" rel="noopener">📄 Official sample ballot (PDF)</a>
+    </section>
+
+    <section class="other-races" aria-labelledby="back-heading">
+      <h3 id="back-heading">Not your ballot?</h3>
+      <div class="other-races-grid">
+        <a href="../find-your-ballot.html">← Pick a different precinct or party</a>
+        <a href="../../elections.html">All race interviews</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-row">
+      <div>
+        Free, non-partisan civic coverage from
+        <span class="pill fb">Facebook</span>
+        <span class="pill yt">YouTube</span>
+      </div>
+      <div class="handle">HardinLocal.com</div>
+    </div>
+    <p class="footer-fine">
+      Hardin Local is a community-focused podcast and social media platform covering Hardin County, Kentucky. Election interviews are produced as a free, non-partisan public service. Sample ballot data is sourced from the Hardin County Clerk's official 2026 Primary Composite Sample Ballot. Polling location data is sourced from the Kentucky State Board of Elections.
+    </p>
+  </footer>
+
+  <script src="../../site-nav.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    // Persist user's ballot choice for return visits
+    try {
+      localStorage.setItem('hl_last_ballot', JSON.stringify({
+        precinct: 'E005',
+        precinctName: 'Memorial',
+        party: 'R',
+        url: location.pathname + location.search
+      }));
+    } catch(e) {}
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var mapEl = document.getElementById('vote-centers-map');
+    if (!mapEl || typeof L === 'undefined') return;
+    var pins = [
+      [37.825769544748, -85.948522935364, 'North Hardin High School', '801 S Logsdon Pkwy, Radcliff 40160', 'eday'],
+      [37.727617628419, -85.802215799364, 'Lincoln Trail Elementary School', '3970 Bardstown Rd, Elizabethtown 42701', 'eday'],
+      [37.523255372591, -85.903443400729, 'Creekside Elementary School', '151 Horseshoe Bend Rd, Sonora 42776', 'eday'],
+      [37.614153812815, -86.016607217393, 'Lakewood Elementary School', '265 Learning Place Ln, Cecilia 42724', 'eday'],
+      [37.997169283739, -85.955644214316, 'West Point School Building', '209 North 13th St, West Point 40177', 'eday'],
+      [37.619521222097, -86.187952240052, 'West 84 Fire Department', '21129 Sonora Hardin Springs Rd, Big Clifty 42712', 'eday'],
+      [37.671809903164, -85.861127411191, 'East Hardin Middle School', '810 New Glendale Rd, Elizabethtown 42701', 'eday'],
+      [37.75373594223, -85.903732694872, 'John Hardin High School', '384 W.A. Jenkins Road, Elizabethtown 42701', 'eday'],
+      [37.803365247877, -85.987096284874, 'J.T. Alton Middle School', '100 Country Club Road, Vine Grove 40175', 'eday'],
+      [37.701232241516, -85.852372916147, 'Elizabethtown High School', '620 N Mulberry St, Elizabethtown 42701', 'eday'],
+      [37.7170378, -85.8999123, 'Hardin County Clerk\'s Office', '150 N. Provident Way, Elizabethtown 42701', 'eday'],
+      [37.838498062785, -85.944989324418, 'Colvin Community Center', '230 Freedoms Way, Radcliff 40160', 'eday'],
+      [37.7353231, -85.85377, 'Heartland Elementary School', '2300 Nelson Dr, Elizabethtown 42701', 'eday'],
+      [37.659215572157, -85.948823950688, 'Cecilia Valley Elementary School', '931 E Main St, Cecilia 42724', 'eday'],
+      [37.601270656284, -85.907740145282, 'Glendale Christian Church', '119 E Main St, Glendale 42740', 'eday'],
+      [37.7170378, -85.8999123, 'Hardin County Clerk\'s Office (early voting)', '150 N Provident Way Ste 103, Elizabethtown 42701', 'early'],
+      [37.838498062785, -85.944989324418, 'Colvin Community Center (early voting)', '230 Freedoms Way, Radcliff 40160', 'early']
+    ];
+    var avgLat = pins.reduce(function(s, p) { return s + p[0]; }, 0) / pins.length;
+    var avgLng = pins.reduce(function(s, p) { return s + p[1]; }, 0) / pins.length;
+    var map = L.map('vote-centers-map').setView([avgLat, avgLng], 11);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+    var edayIcon = L.divIcon({className: 'vc-pin vc-pin-eday', html: '🗳️', iconSize: [32, 32], iconAnchor: [16, 16]});
+    var earlyIcon = L.divIcon({className: 'vc-pin vc-pin-early', html: '⏰', iconSize: [32, 32], iconAnchor: [16, 16]});
+    pins.forEach(function(p) {
+      var icon = p[4] === 'early' ? earlyIcon : edayIcon;
+      L.marker([p[0], p[1]], {icon: icon}).addTo(map)
+        .bindPopup('<strong>' + p[2] + '</strong><br>' + p[3]);
+    });
+  });
+</script>
+</body>
+</html>

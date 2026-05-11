@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hardin Local//2026 Primary Election//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:2026 Kentucky Primary — Hardin County
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:hardin-2026-primary-election-day@hardinlocal.com
+DTSTAMP:20260509T120000Z
+DTSTART;VALUE=DATE:20260519
+DTEND;VALUE=DATE:20260520
+SUMMARY:🗳️ VOTE — 2026 Kentucky Primary Election
+DESCRIPTION:Polls open 6:00 AM – 6:00 PM. Hardin County uses vote centers — any registered voter can use any of 15 Election-Day locations. Bring a photo ID. Find your personalized ballot + vote-center map: https://philtaul.github.io/hardin-local-this-week/elections/find-your-ballot.html
+LOCATION:Hardin County, Kentucky
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow is Election Day — polls 6 AM to 6 PM, bring photo ID
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:Polls close at 6 PM today — go vote if you haven't
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hardin-2026-primary-early-voting@hardinlocal.com
+DTSTAMP:20260509T120000Z
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260517
+SUMMARY:Early Voting Open — 2026 KY Primary
+DESCRIPTION:No-excuse in-person early voting Thursday May 14 – Saturday May 16, 8:00 AM – 4:30 PM. Two locations only — Hardin County Clerk's Office (150 N Provident Way, Elizabethtown) and Colvin Community Center (230 Freedoms Way, Radcliff). Details: https://philtaul.github.io/hardin-local-this-week/elections/find-your-ballot.html
+LOCATION:Hardin County Clerk's Office, 150 N Provident Way, Elizabethtown, KY 42701
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Early voting starts tomorrow — Clerk's Office or Colvin Community Center, 8 AM to 4:30 PM
+END:VALARM
+END:VEVENT
+END:VCALENDAR
