@@ -3,13 +3,14 @@
     "market": "Elizabethtown & Hardin County, Kentucky",
     "attribution": "Compiled by The Brantingham Group (KW)",
     "contributor": "Rachel Brantingham",
-    "lastUpdated": "2026-05-05",
-    "lastEpisode": "S2026E19",
+    "lastUpdated": "2026-05-12",
+    "lastEpisode": "S2026E20",
     "notes": [
       "E10 pricing (avg list $309,198 / avg sold $291,142) is preliminary pending Rachel confirmation — ~$40K below adjacent weeks.",
       "E11/E12 median values are approximate — Rachel's submission repeated the average list price in the median field.",
       "Gaps: E04 (agenda missing), E08 and E09 (Rachel out), E15 (Rachel out).",
-      "E16 script reports data for Mar 31 – Apr 7 (week Rachel missed on E15); E17 reports Apr 14–21 — the week of Apr 7–14 was not separately covered on-air."
+      "E16 script reports data for Mar 31 – Apr 7 (week Rachel missed on E15); E17 reports Apr 14–21 — the week of Apr 7–14 was not separately covered on-air.",
+      "E20 interest rates are range-based: Rachel reported 'high 5% range' for FHA/VA/USDA and 'low 6% range' for conventional — the numeric values shown (5.8% gov / 6.1% conv) are midpoint estimates."
     ]
   },
   "weeks": [
@@ -462,6 +463,39 @@
           { "label": "$250K–$400K", "activeListings": 166, "daysOnMarket": 84 },
           { "label": "$400K+", "activeListings": 106, "daysOnMarket": 79 },
           { "label": "Luxury ($800K+)", "activeListings": 13, "daysOnMarket": 122 }
+        ]
+      },
+      "episodeLink": null,
+      "standaloneVideoLink": null
+    },
+    {
+      "episode": "S2026E20",
+      "airDate": "2026-05-12",
+      "weekLabel": "Week of May 5 – May 12",
+      "data": {
+        "newListings": 34,
+        "underContract": 25,
+        "closed": 21,
+        "avgDaysOnMarket": 74,
+        "activeHomes": 371,
+        "activeHomesApproximate": false,
+        "soldLast30Days": 112,
+        "soldLast30DaysApproximate": false,
+        "monthsInventory": 3.3,
+        "avgListPrice": 360122,
+        "avgSoldPrice": 325593,
+        "medianListPrice": null,
+        "medianSoldPrice": 310000,
+        "interestRates": { "conventional": 6.1, "government": 5.8, "label": "high 5% range gov (FHA/VA/USDA) · low 6% range conv" },
+        "posture": "seller-leaning",
+        "postureDesc": "Healthy stabilization — pending activity rebounded post-Derby, days on market still compressing, list/sold gap narrowing, luxury segment finally moving",
+        "gapDirection": "narrowing",
+        "marketPace": "steady",
+        "priceTiers": [
+          { "label": "Under $250K", "activeListings": 88, "daysOnMarket": 66 },
+          { "label": "$250K–$400K", "activeListings": 181, "daysOnMarket": 74 },
+          { "label": "$400K+", "activeListings": 107, "daysOnMarket": 82 },
+          { "label": "Luxury ($800K+)", "activeListings": 13, "daysOnMarket": 115 }
         ]
       },
       "episodeLink": null,
